@@ -13,7 +13,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>My Library</title>
+<title>Khoj Library</title>
 <style>
   :root {
     --saffron-50: #fff1e6;
@@ -57,7 +57,8 @@
     top: 0;
     z-index: 10;
   }
-  h1 { margin: 0 0 12px; font-size: 22px; font-weight: 500; color: var(--accent); }
+  h1 { margin: 0 0 12px; font-size: 22px; font-weight: 500; color: var(--accent); display: flex; align-items: center; gap: 10px; }
+  h1 .logo { width: 28px; height: 28px; border-radius: 6px; object-fit: cover; flex-shrink: 0; }
   .controls {
     display: flex;
     flex-wrap: wrap;
@@ -144,7 +145,10 @@
 </head>
 <body>
 <header>
-  <h1 id="title">My Library</h1>
+  <h1 id="title">
+    <img class="logo" id="logo" src="" alt="" onerror="this.style.display='none'" />
+    <span>Khoj Library</span>
+  </h1>
   <div class="controls">
     <input id="q" type="search" placeholder="Search title, author, ISBN" autocomplete="off" />
     <select id="sort">
@@ -296,9 +300,17 @@
   }
 
   function renderGrid(list) {
+    // Inline SVG placeholder so we never hit a broken image icon. Sized 2:3
+    // book aspect, themed to bg-alt.
+    const placeholder = "data:image/svg+xml;utf8," + encodeURIComponent(
+      `<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 90'>` +
+      `<rect width='60' height='90' fill='#fac7a7' fill-opacity='0.25'/>` +
+      `<path d='M20 28h20v6H20zM20 38h20v4H20zM20 46h20v4H20zM20 54h12v4H20z' fill='#e25822' fill-opacity='0.6'/>` +
+      `</svg>`
+    );
     return `<div class="grid">` + list.map((b) => `
       <figure>
-        ${b.coverUrl ? `<img src="${escape(b.coverUrl)}" alt="${escape(b.title)}" loading="lazy" />` : `<img alt="(no cover)" />`}
+        <img src="${b.coverUrl ? escape(b.coverUrl) : placeholder}" alt="${escape(b.title)}" loading="lazy" onerror="this.src='${placeholder}'" />
         <figcaption><span class="title">${escape(b.title)}</span></figcaption>
       </figure>
     `).join("") + `</div>`;
