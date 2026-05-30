@@ -1,7 +1,21 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1780157555174,
+  "exportedAt": 1780158487318,
   "books": [
+    {
+      "id": 4,
+      "title": "Code",
+      "author": "Charles Petzold, Charles Petzold",
+      "isbn": "9780735611313",
+      "publisher": "Microsoft",
+      "publishedYear": 2000,
+      "genre": "Computer programming, Coding theory, Datenverarbeitung",
+      "coverUrl": "covers/4.jpg",
+      "pageCount": 128,
+      "addedDate": 1780158303106,
+      "copyCount": 1,
+      "needsMetadata": false
+    },
     {
       "id": 3,
       "title": "The Ruling Caste: Imperial Lives in the Victorian Raj",
