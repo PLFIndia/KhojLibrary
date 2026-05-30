@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "exportedAt": 1780153439115,
+  "books": [
+    {
+      "id": 1,
+      "title": "Computer Science Unleashed: Harness the Power of Computational Systems",
+      "author": "Wladston Ferreira Filho, Moto Pictet",
+      "isbn": "9780997316032",
+      "publisher": "Code Energy",
+      "publishedYear": 2021,
+      "genre": "Computers, Internet",
+      "language": "English",
+      "location": "Shelf 2",
+      "addedDate": 1780141561202,
+      "copyCount": 1,
+      "needsMetadata": false
+    }
+  ],
+  "wishlist": []
+}
