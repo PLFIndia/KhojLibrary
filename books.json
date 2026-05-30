@@ -1,7 +1,21 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1780157437469,
+  "exportedAt": 1780157520275,
   "books": [
+    {
+      "id": 3,
+      "title": "The Ruling Caste: Imperial Lives in the Victorian Raj",
+      "author": "David Gilmour",
+      "isbn": "9780374530808",
+      "publisher": "Farrar, Straus and Giroux",
+      "publishedYear": 2007,
+      "genre": "British, india, India, history, british occupation, 1765-1947, India, politics and government, 1765-1947",
+      "coverUrl": "https://covers.openlibrary.org/b/id/1188894-M.jpg",
+      "pageCount": 381,
+      "addedDate": 1780157504109,
+      "copyCount": 1,
+      "needsMetadata": false
+    },
     {
       "id": 2,
       "title": "Computer Science Distilled: Learn the Art of Solving Computational Problems",
