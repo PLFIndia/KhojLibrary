@@ -1,7 +1,21 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1780153439115,
+  "exportedAt": 1780155055051,
   "books": [
+    {
+      "id": 2,
+      "title": "Computer Science Distilled: Learn the Art of Solving Computational Problems",
+      "author": "Wladston Ferreira Filho, Raimondo Pictet",
+      "isbn": "9780997316001",
+      "publisher": "Code Energy LLC",
+      "publishedYear": 2017,
+      "genre": "Computer science, Computer algorithms, Programming languages (electronic computers)",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10194609-M.jpg",
+      "pageCount": 180,
+      "addedDate": 1780154638795,
+      "copyCount": 1,
+      "needsMetadata": false
+    },
     {
       "id": 1,
       "title": "Computer Science Unleashed: Harness the Power of Computational Systems",
