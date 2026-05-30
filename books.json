@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1780157083962,
+  "exportedAt": 1780157437469,
   "books": [
     {
       "id": 2,
@@ -24,6 +24,7 @@
       "publisher": "Code Energy",
       "publishedYear": 2021,
       "genre": "Computers, Internet",
+      "coverUrl": "covers/1.jpg",
       "language": "English",
       "location": "Shelf 2",
       "addedDate": 1780141561202,
