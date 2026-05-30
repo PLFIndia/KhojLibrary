@@ -1,0 +1,310 @@
+<!doctype html>
+<!--
+  Pitaka library viewer (D12).
+  Single self-contained file: no CDN dependencies, no build step,
+  no runtime fetch beyond the sibling books.json.
+
+  Bundled with the app at app/src/main/assets/publish/index.html
+  and uploaded verbatim to the user's GitHub repo on publish.
+
+  viewerVersion: 1
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>My Library</title>
+<style>
+  :root {
+    --saffron-50: #fff1e6;
+    --saffron-100: #fac7a7;
+    --saffron-400: #e25822;
+    --saffron-700: #7e2706;
+    --ink-50: #fffaf5;
+    --ink-900: #1f1209;
+    --grey-30: #e5e5e5;
+    --grey-70: #424242;
+    --bg: var(--ink-50);
+    --bg-alt: var(--saffron-50);
+    --fg: var(--ink-900);
+    --fg-muted: var(--grey-70);
+    --accent: var(--saffron-400);
+    --border: var(--grey-30);
+    --shadow: 0 1px 2px rgba(0,0,0,0.06);
+  }
+  [data-theme="dark"] {
+    --bg: #1a1208;
+    --bg-alt: #2a1c10;
+    --fg: var(--ink-50);
+    --fg-muted: var(--saffron-100);
+    --border: #3a2a1a;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    min-height: 100vh;
+    -webkit-text-size-adjust: 100%;
+  }
+  header {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  h1 { margin: 0 0 12px; font-size: 22px; font-weight: 500; color: var(--accent); }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+  input[type="search"], select, button {
+    font: inherit;
+    border: 1px solid var(--border);
+    background: var(--bg-alt);
+    color: var(--fg);
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+  input[type="search"] { flex: 1; min-width: 180px; }
+  button { cursor: pointer; }
+  button.active { background: var(--accent); color: var(--ink-50); border-color: var(--accent); }
+  .meta { color: var(--fg-muted); font-size: 12px; margin: 8px 0 0; }
+  main { padding: 16px 20px 48px; }
+
+  /* Layouts */
+  .layout-table table { width: 100%; border-collapse: collapse; }
+  .layout-table th, .layout-table td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+  .layout-table th { font-weight: 600; color: var(--fg-muted); }
+
+  .layout-card .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+  }
+  .layout-card .card {
+    border: 1px solid var(--border);
+    background: var(--bg-alt);
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: var(--shadow);
+  }
+  .layout-card .card h3 { margin: 0 0 4px; font-size: 16px; }
+  .layout-card .card .author { color: var(--fg-muted); font-size: 14px; }
+  .layout-card .card .row { font-size: 12px; color: var(--fg-muted); margin-top: 4px; }
+
+  .layout-grid .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+  }
+  .layout-grid .grid figure {
+    margin: 0;
+    text-align: center;
+  }
+  .layout-grid .grid img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    border-radius: 4px;
+    background: var(--bg-alt);
+    border: 1px solid var(--border);
+  }
+  .layout-grid .grid figcaption {
+    font-size: 12px;
+    color: var(--fg-muted);
+    margin-top: 4px;
+    overflow-wrap: anywhere;
+  }
+  .layout-grid .grid .title { color: var(--fg); }
+
+  .empty {
+    color: var(--fg-muted);
+    font-size: 14px;
+    margin: 32px 0;
+    text-align: center;
+  }
+  .error {
+    color: #b00020;
+    margin: 32px 0;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1 id="title">My Library</h1>
+  <div class="controls">
+    <input id="q" type="search" placeholder="Search title, author, ISBN" autocomplete="off" />
+    <select id="sort">
+      <option value="addedDate">Recently added</option>
+      <option value="title">Title</option>
+      <option value="author">Author</option>
+      <option value="publishedYear">Year published</option>
+    </select>
+    <button data-layout="table" class="active">Table</button>
+    <button data-layout="card">Cards</button>
+    <button data-layout="grid">Covers</button>
+    <button id="theme" title="Toggle dark mode">🌗</button>
+  </div>
+  <p class="meta" id="meta">Loading…</p>
+</header>
+<main id="root"></main>
+
+<script>
+  const $ = (s) => document.querySelector(s);
+  const root = $("#root");
+  const q = $("#q");
+  const sortEl = $("#sort");
+  const meta = $("#meta");
+  const theme = $("#theme");
+
+  // ---- Theming ----
+  const THEME_KEY = "pitaka-theme";
+  function applyTheme(t) {
+    document.documentElement.setAttribute("data-theme", t);
+    localStorage.setItem(THEME_KEY, t);
+  }
+  applyTheme(localStorage.getItem(THEME_KEY) || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+  theme.addEventListener("click", () => {
+    applyTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "light" : "dark");
+  });
+
+  // ---- Layout switcher ----
+  let layout = "table";
+  document.querySelectorAll("button[data-layout]").forEach((b) => {
+    b.addEventListener("click", () => {
+      layout = b.dataset.layout;
+      document.querySelectorAll("button[data-layout]").forEach((x) => x.classList.toggle("active", x === b));
+      render();
+    });
+  });
+  q.addEventListener("input", render);
+  sortEl.addEventListener("change", render);
+
+  // ---- Data ----
+  let books = [];
+  let loadError = null;
+
+  async function load() {
+    try {
+      const res = await fetch("books.json", { cache: "no-cache" });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      const data = await res.json();
+      if (typeof data.schemaVersion !== "number") {
+        throw new Error("Missing schemaVersion in books.json");
+      }
+      if (data.schemaVersion > 1) {
+        meta.textContent = "This file was created by a newer Pitaka. Re-publish from your phone to update the viewer.";
+      }
+      books = Array.isArray(data.books) ? data.books : [];
+      render();
+    } catch (e) {
+      loadError = e.message || String(e);
+      root.innerHTML = '<div class="error">Failed to load books.json: ' + escape(loadError) + "</div>";
+    }
+  }
+
+  function escape(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
+    }[c]));
+  }
+
+  function filterAndSort() {
+    const needle = q.value.trim().toLowerCase();
+    const sortKey = sortEl.value;
+    let out = books.slice();
+    if (needle) {
+      out = out.filter((b) => {
+        const t = (b.title || "").toLowerCase();
+        const tt = (b.titleTransliteration || "").toLowerCase();
+        const a = (b.author || "").toLowerCase();
+        const i = (b.isbn || "").toLowerCase();
+        return t.indexOf(needle) >= 0 || tt.indexOf(needle) >= 0 || a.indexOf(needle) >= 0 || i.indexOf(needle) >= 0;
+      });
+    }
+    out.sort((a, b) => {
+      const av = (a[sortKey] == null) ? "" : a[sortKey];
+      const bv = (b[sortKey] == null) ? "" : b[sortKey];
+      if (sortKey === "addedDate" || sortKey === "publishedYear") {
+        // numeric desc
+        return (Number(bv) || 0) - (Number(av) || 0);
+      }
+      return String(av).localeCompare(String(bv));
+    });
+    return out;
+  }
+
+  function render() {
+    if (loadError) return;
+    const filtered = filterAndSort();
+    meta.textContent = `${filtered.length} of ${books.length} book${books.length === 1 ? "" : "s"}`;
+    if (filtered.length === 0) {
+      root.innerHTML = '<div class="empty">No matches.</div>';
+      return;
+    }
+    root.className = "layout-" + layout;
+    if (layout === "table") root.innerHTML = renderTable(filtered);
+    else if (layout === "card") root.innerHTML = renderCards(filtered);
+    else if (layout === "grid") root.innerHTML = renderGrid(filtered);
+  }
+
+  function renderTable(list) {
+    const rows = list.map((b) => `
+      <tr>
+        <td>${escape(b.title)}${b.titleTransliteration ? `<br><span class="meta">${escape(b.titleTransliteration)}</span>` : ""}</td>
+        <td>${escape(b.author || "")}</td>
+        <td>${escape(b.publishedYear || "")}</td>
+        <td>${escape(b.isbn || "")}</td>
+      </tr>
+    `).join("");
+    return `
+      <table>
+        <thead>
+          <tr><th>Title</th><th>Author</th><th>Year</th><th>ISBN</th></tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+    `;
+  }
+
+  function renderCards(list) {
+    return `<div class="cards">` + list.map((b) => `
+      <div class="card">
+        <h3>${escape(b.title)}</h3>
+        ${b.titleTransliteration ? `<div class="row">${escape(b.titleTransliteration)}</div>` : ""}
+        <div class="author">${escape(b.author || "")}</div>
+        <div class="row">
+          ${b.publishedYear ? escape(b.publishedYear) + " · " : ""}
+          ${b.publisher ? escape(b.publisher) : ""}
+        </div>
+        <div class="row">${b.isbn ? "ISBN " + escape(b.isbn) : ""}</div>
+      </div>
+    `).join("") + `</div>`;
+  }
+
+  function renderGrid(list) {
+    return `<div class="grid">` + list.map((b) => `
+      <figure>
+        ${b.coverUrl ? `<img src="${escape(b.coverUrl)}" alt="${escape(b.title)}" loading="lazy" />` : `<img alt="(no cover)" />`}
+        <figcaption><span class="title">${escape(b.title)}</span></figcaption>
+      </figure>
+    `).join("") + `</div>`;
+  }
+
+  load();
+</script>
+</body>
+</html>
