@@ -1,7 +1,20 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1780158522296,
+  "exportedAt": 1780163513917,
   "books": [
+    {
+      "id": 5,
+      "title": "Kabir ke dohe",
+      "author": "Kabir Das",
+      "isbn": "9789370891319",
+      "publisher": "Finger Print",
+      "coverUrl": "covers/5.jpg",
+      "pageCount": 96,
+      "language": "Hindi",
+      "addedDate": 1780161902914,
+      "copyCount": 1,
+      "needsMetadata": false
+    },
     {
       "id": 4,
       "title": "Code",
