@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1780210429553,
+  "exportedAt": 1780210638545,
   "books": [
     {
       "id": 9,
@@ -22,6 +22,7 @@
       "title": "रेख्ता उर्दू लर्निंग गाइड",
       "titleTransliteration": "Rekhta urdu learning guide",
       "author": "Rekhta Publications",
+      "isbn": "9788194876960",
       "publisher": "Rekhta Publications",
       "genre": "Urdu Learning",
       "coverUrl": "covers/8.jpg",
