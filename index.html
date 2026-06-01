@@ -7,12 +7,27 @@
   Bundled with the app at app/src/main/assets/publish/index.html
   and uploaded verbatim to the user's GitHub repo on publish.
 
-  viewerVersion: 2
+  viewerVersion: 3
+    v3: F-09 — Content-Security-Policy meta added; image origins
+         restricted to same-origin, data:, and the OpenLibrary /
+         Google Books cover hosts. Mirrors CoverUrlAllowList.kt.
 -->
 <html lang="en">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+<!--
+  F-09: Content-Security-Policy.
+  default-src 'self' is the catch-all deny; everything else is an
+  explicit grant. img-src mirrors CoverUrlAllowList.ALLOWED_HOSTS
+  in the Kotlin publisher; any drift between the two is caught by
+  PublishViewerCspTest. 'unsafe-inline' on script/style is honest:
+  the viewer is a single self-contained file built around inline
+  <style> and <script>. It does not protect against XSS in this
+  document, but the F-09 threat is cross-origin image exfiltration,
+  which img-src handles regardless of script-src.
+-->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://covers.openlibrary.org https://books.google.com https://books.googleusercontent.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'" />
 <title>Khoj Library</title>
 <style>
   :root {
