@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1780293582190,
+  "exportedAt": 1780294062769,
   "books": [
     {
       "id": 11012,
@@ -156,6 +156,7 @@
       "publisher": "Code Energy LLC",
       "publishedYear": 2017,
       "genre": "Computer science, Computer algorithms, Programming languages (electronic computers)",
+      "coverUrl": "covers/2.jpg",
       "pageCount": 180,
       "addedDate": 1780154638795,
       "copyCount": 1,
