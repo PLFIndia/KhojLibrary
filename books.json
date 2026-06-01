@@ -1,7 +1,21 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1780292066884,
+  "exportedAt": 1780293543292,
   "books": [
+    {
+      "id": 11012,
+      "title": "Liberty : The Indian Story",
+      "author": "John Harriss",
+      "isbn": "9789354477393",
+      "publisher": "Speaking Tiger",
+      "genre": "Rights",
+      "coverUrl": "covers/11012.jpg",
+      "pageCount": 194,
+      "language": "English",
+      "addedDate": 1780293247183,
+      "copyCount": 1,
+      "needsMetadata": false
+    },
     {
       "id": 11011,
       "title": "What the Buddha taught.",
@@ -94,8 +108,9 @@
     },
     {
       "id": 5,
-      "title": "Kabir ke dohe",
-      "author": "Kabir Das",
+      "title": "कबीर के दोहे",
+      "titleTransliteration": "Kabir ke dohe",
+      "author": "कबीर दास",
       "isbn": "9789370891319",
       "publisher": "Finger Print",
       "coverUrl": "covers/5.jpg",
@@ -108,7 +123,7 @@
     {
       "id": 4,
       "title": "Code",
-      "author": "Charles Petzold, Charles Petzold",
+      "author": "Charles Petzold",
       "isbn": "9780735611313",
       "publisher": "Microsoft",
       "publishedYear": 2000,
