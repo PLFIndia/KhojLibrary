@@ -1,7 +1,37 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1780210638545,
+  "exportedAt": 1780292066884,
   "books": [
+    {
+      "id": 11011,
+      "title": "What the Buddha taught.",
+      "author": "Walpola Rahula",
+      "isbn": "9781851681426",
+      "publisher": "Oneworld Publications",
+      "publishedYear": 1974,
+      "genre": "Buddhism",
+      "coverUrl": "covers/11011.jpg",
+      "pageCount": 151,
+      "language": "English",
+      "addedDate": 1780282876009,
+      "copyCount": 1,
+      "needsMetadata": false
+    },
+    {
+      "id": 10,
+      "title": "तरकश",
+      "titleTransliteration": "Tarkash",
+      "author": "जावेद अख़्तर",
+      "isbn": "9788126707263",
+      "publisher": "राजकमल",
+      "genre": "शायरी",
+      "coverUrl": "covers/10.jpg",
+      "pageCount": 167,
+      "language": "Urdu",
+      "addedDate": 1780214658949,
+      "copyCount": 1,
+      "needsMetadata": false
+    },
     {
       "id": 9,
       "title": "उर्दू शायरी का शब्द संसार",
@@ -45,13 +75,13 @@
       "language": "Urdu",
       "addedDate": 1780209862847,
       "copyCount": 1,
-      "needsMetadata": true
+      "needsMetadata": false
     },
     {
       "id": 6,
       "title": "हर मौके के लिए एक शेर",
       "titleTransliteration": "Har mauke ke liye ek sher",
-      "author": "Sanjeev Saraf",
+      "author": "संजीव सराफ़",
       "isbn": "9788199502109",
       "publisher": "Rekhta Books",
       "genre": "shayari",
@@ -111,7 +141,6 @@
       "publisher": "Code Energy LLC",
       "publishedYear": 2017,
       "genre": "Computer science, Computer algorithms, Programming languages (electronic computers)",
-      "coverUrl": "https://covers.openlibrary.org/b/id/10194609-M.jpg",
       "pageCount": 180,
       "addedDate": 1780154638795,
       "copyCount": 1,
