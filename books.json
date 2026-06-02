@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1780405452128,
+  "exportedAt": 1780405614620,
   "books": [
     {
       "title": "भारत: गांधी के बाद",
@@ -12,7 +12,8 @@
       "genre": "History, Indian History",
       "language": "Hindi",
       "coverUrl": "covers/bea6389da6e4f2c6.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "पापा जब बच्चे थे",
@@ -22,7 +23,8 @@
       "genre": "Kids",
       "language": "Hindi",
       "coverUrl": "covers/bb6c8343bf9eb4ec.jpg",
-      "ageGroup": "AGE_6_10"
+      "ageGroup": "AGE_6_10",
+      "availability": "available"
     },
     {
       "title": "Fraternity: constitutional norm and human need",
@@ -32,7 +34,8 @@
       "genre": "Indian constitution",
       "language": "English",
       "coverUrl": "covers/b1aa1dd1a97a921c.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "We, the People, and Our Constitution",
@@ -42,7 +45,8 @@
       "genre": "Indian constitution",
       "language": "English",
       "coverUrl": "covers/94048f4c9b09c6c4.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "Liberty: The Indian Story",
@@ -52,7 +56,8 @@
       "genre": "Indian constitution",
       "language": "English",
       "coverUrl": "covers/5ba959b43bf48727.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "Why We Die: The New Science of Ageing and the Quest for Immortality",
@@ -63,7 +68,8 @@
       "genre": "Public health",
       "language": "English",
       "coverUrl": "covers/10d1ab4508f59171.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "Nexus",
@@ -74,7 +80,8 @@
       "genre": "Information network, History",
       "language": "English",
       "coverUrl": "covers/ed5a98e7f9ac8e78.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "Aryans, Jews, Brahmins: Theorizing authority through myths of identity",
@@ -84,7 +91,8 @@
       "genre": "History",
       "language": "English",
       "coverUrl": "covers/bfab9d823c51605b.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "What the Buddha taught.",
@@ -94,7 +102,8 @@
       "publishedYear": 1974,
       "genre": "Buddhism",
       "coverUrl": "covers/e2d94406af520d7b.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "तरकश",
@@ -105,7 +114,8 @@
       "genre": "शायरी",
       "language": "Urdu",
       "coverUrl": "covers/d5975d6539cbefc2.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "उर्दू शायरी का शब्द संसार",
@@ -116,7 +126,8 @@
       "genre": "Urdu Learning",
       "language": "Urdu",
       "coverUrl": "covers/e92e47e4d43ded10.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "रेख्ता उर्दू लर्निंग गाइड",
@@ -127,7 +138,8 @@
       "genre": "Urdu Learning",
       "language": "Urdu",
       "coverUrl": "covers/132998f4d9975d69.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "उर्दू शब्दों का गुलदस्ता",
@@ -138,7 +150,8 @@
       "genre": "Urdu",
       "language": "Urdu",
       "coverUrl": "covers/b28ac6e6775eb0ca.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "हर मौके के लिए एक शेर",
@@ -149,7 +162,8 @@
       "genre": "shayari",
       "language": "Urdu",
       "coverUrl": "covers/2c63edd08072c815.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "Kabir ke dohe",
@@ -158,7 +172,8 @@
       "publisher": "Finger Print",
       "language": "Hindi",
       "coverUrl": "covers/467314cd1a0a13bd.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "Code",
@@ -169,7 +184,8 @@
       "genre": "Computer programming, Coding theory, Datenverarbeitung",
       "language": "English",
       "coverUrl": "covers/0caae14907c9caec.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "The Ruling Caste: Imperial Lives in the Victorian Raj",
@@ -180,7 +196,8 @@
       "genre": "British, india, India, history, british occupation, 1765-1947, India, politics and government, 1765-1947",
       "language": "English",
       "coverUrl": "covers/4adf27533c285c0f.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "Computer Science Distilled: Learn the Art of Solving Computational Problems",
@@ -191,7 +208,8 @@
       "genre": "Computer science, Computer algorithms, Programming languages (electronic computers)",
       "language": "English",
       "coverUrl": "covers/2954cfad216db452.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     },
     {
       "title": "Computer Science Unleashed: Harness the Power of Computational Systems",
@@ -202,7 +220,8 @@
       "genre": "Computers, Internet",
       "language": "English",
       "coverUrl": "covers/7b15523fd998e1dc.jpg",
-      "ageGroup": "ADVANCE"
+      "ageGroup": "ADVANCE",
+      "availability": "available"
     }
   ]
 }
