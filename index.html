@@ -7,10 +7,18 @@
   Bundled with the app at app/src/main/assets/publish/index.html
   and uploaded verbatim to the user's GitHub repo on publish.
 
-  viewerVersion: 3
+  viewerVersion: 4
     v3: F-09 — Content-Security-Policy meta added; image origins
          restricted to same-origin, data:, and the OpenLibrary /
          Google Books cover hosts. Mirrors CoverUrlAllowList.kt.
+    v4: genre + language filter facets (populated from books.json);
+         coarse availability badge ("Available" / "All out") rendered
+         when the publisher included it (vault unlocked at publish time).
+         Availability is a coarse status only — never an exact count.
+    v5 (Revision R): genre dropped as a dropdown — now matched via the
+         search box (title/author/genre). Sort options are Recently added /
+         Language / Age group. Language stays a filter dropdown. Age group
+         renders as a small badge and is a sort key (ordinal order).
 -->
 <html lang="en">
 <head>
@@ -108,6 +116,14 @@
   button { cursor: pointer; }
   button.active { background: var(--accent); color: var(--ink-50); border-color: var(--accent); }
   .meta { color: var(--fg-muted); font-size: 12px; margin: 8px 0 0; }
+  /* Coarse availability badges (v4). Only "available" / "all out" — never a count. */
+  .avail { display: inline-block; font-size: 11px; font-weight: 600; padding: 1px 6px; border-radius: 999px; white-space: nowrap; }
+  .avail-available { background: #1b5e2022; color: #1b5e20; border: 1px solid #1b5e2055; }
+  .avail-out { background: #b0002022; color: #b00020; border: 1px solid #b0002055; }
+  .avail-age { background: #1565c022; color: #1565c0; border: 1px solid #1565c055; }
+  [data-theme="dark"] .avail-available { color: #7fdf95; }
+  [data-theme="dark"] .avail-out { color: #ff8a80; }
+  [data-theme="dark"] .avail-age { color: #90caf9; }
   main { padding: 16px 20px 48px; }
 
   /* Layouts */
@@ -180,15 +196,15 @@
     <img class="logo" id="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAIAAADTED8xAAAAA3NCSVQICAjb4U/gAAAAAXNSR0IArs4c6QAAC6pJREFUeJzt3cuPHFcVx/HfOfdW94zHduIkOEiQBAUhxCpBSGyIxGPHCnas+BcQfwESygIJiQVsIrFiyyYIRQghIViyYhGQeEgoPDYoiYVjZ8Yz3VX3HhaN43ZsM13TXVWnfX4feRFN+lFTU9/uel8xMxBFpVNPANGUGACFxgAoNAZAoTEACo0BUGgMgEJjABQaA6DQGACFxgAoNAZAoTEACo0BUGgMgEJjABQaA6DQGACFxgAoNAZAoTEACo0BUGgMgEJjABQaA6DQGACFxgAoNAZAoTEACo0BUGgMgEJjABQaA6DQGACFxgAoNAZAoTEACo0BUGgMgEJjABQaA6DQGACFxgAoNAZAoTEACo0BUGgMgEJjABQaA6DQGACFxgAoNAZAoTEACo0BUGgMgEJjABQaA6DQGACFxgAoNAZAoTEACo0BUGgMgEJjABQaA6DQGACFxgAoNAZAoTEACo0BUGgMgELLU08AAJx1Zz98/c/XddaqIM1LqaofLtOsAhDRtf8WAFKl6tkXXv7kpz9aZgdH576XWYVUWeRFc5rksNd0Gmpj9aTqgb6f9Ilez91Ea2flnZ+Wd27U5mauzb3/IWltIgwARB6YtoWhmedGnv9qmr98/pvVYqYQM6li2y4GZoa7f5Edk9JBm2Jtqo3sfnF1EcCPfvaX7/zkzqxdLprjy8sDEan13iK+mrn3EQGgIgBay5Cz6/q7N3/1jdkG7yWmVd63dPV7r/3+x6+f9ppOQ56V7kzlSP/91q+/2eu5m2gWBzfe/Pmz+g+k47K2MNV6bw6sPhpW82edQGGzanZy81/XPv/aue9lpuW9N27//ZdN0apnO/oNdi9XaXOXqhx94uv4yNd2//o7f8ULeAbNvM2z9iijtHkJAOm859wlBWZX5eyZw3J5k2eZQKCW6rvHT52kG72m06ALyW2ypna9nrihOmvl0i05O66laWz903Tt+7A84rlyCnRiNtcPt/FwYjf/9sbTp7/Q7qhIc/7jJ6JVDCr59Nafnnzyi49pAK3qYnacULRqU/utlogsF/lmwX8EZZNfxwRaD4FWpINt3NmKLqvMzdJ96ye7Y6JajlAu1eYUsva9Z+dvqpmImYih1Y3WQ0xqU5J2R53OxTZrZgpts9D2WtIbyO8O8fouAjBtLp3Nu2bZ1MOq/T5cxRqg1nql6EZriGJdJzlbqlr6rrFqbcSAtCilZzkbvr4lAUSLqUnt9xZadJnLvFXd9NszQ08MyaRTDLDuviNak+gdK9csDzKR3AtEobkIwGyYHQj/9y0v/I4i8sBWOe0rFwEQTcVFAKYwEQNstK8BkYfsXT1PRYKeoZvro/bFbMkets+XhuQigFqNf3iahIsARMbeBNhmG2BAMvq2UHguAiCaiosA1CAGAcbbvXKhbQBFQT1AXtTNj1SPxQSzDiUh+T2o5ZGLAIim4iKA/VrxNRtvZ1VftVZN7r6dPHMRANFUXARQYCYY9TjAhayOA2g9FAxyNug2BHWZUlOb1txNm2cuAiCaiosARDD2cbAtjgOYGdyePmk8pNiPiwCIpuLiegCpELPVcYCRNgO2OA5g+cx6nqw/AoPOSimN5g2ungEg1Y5eevW922+lWiv6XYQ0plTM0tLk4PKl54Z4fRcB0Pi6VOTwY5fnL0gV63kR0piyaZWuqBXkIS7D8xLAHh0KeDyuB2i6DC2QgmwY5grPXUmYpdUcH2AZ8RIAjazLrUAFKjBseB39FAwt8L+rIWWAM1BcBDDBXqAt+DwSLIZlxrxF2Wy/RobrT/0PCOaDvj73AlFoLgIwe/BOZ4O/5R5tddBwXARANJWoAWxxTbCUAxnomuBtSIUlWAL2Z3PKgagBEAHwE0ApfvfE7ZMLfbNF5iUA2pVS/K2eOeYlgJS8TMm5RGS49ewH73u+oSKSK0rqpPN7r3OH9maxIxqClwAu/Ml3QT6vBxj/HqnhuQhARB4cE4loBC7OBdqXHReDXw8g284K2XxmttY2JXe5SzUNPfvXX18e8XM84jEQSK1QgzQ8G5R2pWsk1dsnb//BxGzgE86wPgZZPXj4z9etPwYJ0gGS0lFz/aWdT5qLAGTrT74LvOW+fO0MJHd25+3fzv763aptUwfec1rXAtPFw3++bv0xpqYFkmpt8JU/7nzSXARA41toJ2gb3OrKk8DAeyC0vfffNn/4z9etPUZMzDpItq3Hcn0oFwFMMEKMT1vPB9v42joVQIB6mGQ5/D0u1t5Auof//L6Hd2uPEEWBrW4eu3vc90KhuQhgNeT71FPhwPjbQuG5CIAjxNBUXAQwwQgxF+L6egC6EBcBEE0lagDbjRPMq64eG1EDIALgJIAJtgC2OBLs+u7Q1JOLAIim4iKACfaB+rwvEI+Ij85FAERTcRHABPcG3WZ8gHRmA40TzCPBo3MRANFUXATAFd9dsVpVXPxN94WLmcVzgWgqLq4HAKAq+3J6jecRYlS1bHZ5Vwbk6VduPv2ly6eyuO+i4EddwDsNMVG0rR4eXHtxiNf3EgCNTKoif/yJz/6g1qNDXW/GWwAJ0mZYh9kQr+8iAI4QsyubXxHWJSQUtbmaORz08gNiMGmyWINBRpFwEQCNL5sB1TAz7ey+TUFf3wAqyyJJTNQgsvvF1UUABYDCMMogwZarduhKxUxw3OupqcyWs+OD9rrIPweauvFIBiCA+FgGHu3ggwkdgvNffvdkNdSgpiv6Tif9BoiuedFJhZ5C9mOEOTpXuACAklAr9NVvf/n731rdS63nCwis+9wgk0ajCxiAwWpNs3l3p6SD8x++Tk5QL1dZYD4bZJcEjc5FAGqoXZW02uQf+M0kAzkDyJf6//JXoAB6ZkOOuTgSTDQVLwHs0Qgx9DjhYkehuQjABMXqSMcBPOMVYaNzEQBHiKGpuFjsaq08HRrgFWETcBGAiAgv46ApuFjsxCBmAvg90X5P9BgjjAA4CYBoKgzAkxFHiKEVBkChuQjAFCbC4wDcCzQ+FwHwrhA0FRcB7MsIMfT4cREA0VRcBKCG1TCwPA6wJd4Zri/OLArNRQBm3Ajejc3vDEcrLgLguUA0FReLXRWYGI8D8Ejw+FwEQDQVFwHs171BB8QjwaNzEQDRVFwEkCA8DrATPA7Ql4uZxXOBaCouAgCgyn0XO8DjAH15CYBoEi4C4F6gFUPNtiyppIsO2cLjAH25CIBoKi4CsEFGf9o/tW05G0bmIgBakcbF3epDYQCelFTlBKYeRqcLggE4onaasUxWtPLvMhLOaE9qVW4MjYsrnY6U5lKLWZEEqexgHPwGcETqmdgBpIV0U09LFPwGcMQkmQmgPC44Gi/fALXWqSdheqoNoHf/0RhczGiOEHOX3N0Hyk2AkbhY7Gxx53T21LxDp7a6RVCPf1JQrqZ8y8rerzbUsiz5KNmdnrMAYkhoFVVwa8GTQftwsQ3wmReffRa/0XqjSAPrNwa7Wm5Fnn9u0ebaDDR9Y8l6ctxdyelTi4SDrudnU50DaZ66ay+8MszUPZ7ExZUodrvYVdHVSUF9Nwa6ikZNFEtIv3i8aYHGjtEdmibrufwbOpOSK850zpHsN+cigM6Qq9VUxUR6rpUZIOgAMaR9P4hk1gJiyFWOc+0Xc5VZlS63ueaicsGzqQNyEQDRVFxsBBNNhQFQaAyAQmMAFBoDoNAYAIXGACg0BkChMQAKjQFQaAyAQmMAFBoDoNAYAIXGACg0BkChMQAKjQFQaAyAQmMAFBoDoNAYAIXGACg0BkChMQAKjQFQaAyAQmMAFBoDoNAYAIXGACg0BkChMQAKjQFQaAyAQmMAFBoDoNAYAIXGACg0BkChMQAKjQFQaAyAQmMAFBoDoNAYAIXGACg0BkChMQAKjQFQaAyAQmMAFBoDoNAYAIXGACg0BkChMQAKjQFQaAyAQmMAFBoDoNAYAIXGACg0BkChMQAKjQFQaAyAQmMAFBoDoNAYAIXGACg0BkChMQAKjQFQaAyAQvsvVYbH3zDs8tkAAAAASUVORK5CYII=" alt="" onerror="this.style.display='none'" />
     <span>Khoj Library</span>
   </h1>
-  <div class="contact"><a class="contact-item" href="https://www.google.com/maps/search/?api=1&amp;query=6070%2C%20G-Block%2C%20Aerocity%2C%20Mohali" target="_blank" rel="noopener noreferrer">📍 6070, G-Block, Aerocity, Mohali</a></div>
+  <div class="contact"><a class="contact-item" href="https://www.google.com/maps/search/?api=1&amp;query=%23%206070%20%2C%20G-Block%2C%20Aerocity%2C%20Mohali" target="_blank" rel="noopener noreferrer">📍 # 6070 , G-Block, Aerocity, Mohali</a></div>
   <div class="controls">
-    <input id="q" type="search" placeholder="Search title, author, ISBN" autocomplete="off" />
+    <input id="q" type="search" placeholder="Search title, author, genre, ISBN" autocomplete="off" />
     <select id="sort">
       <option value="addedDate">Recently added</option>
-      <option value="title">Title</option>
-      <option value="author">Author</option>
-      <option value="publishedYear">Year published</option>
+      <option value="language">Language</option>
+      <option value="ageGroup">Age group</option>
     </select>
+    <select id="language"><option value="">All languages</option></select>
     <button data-layout="table" class="active">Table</button>
     <button data-layout="card">Cards</button>
     <button data-layout="grid">Covers</button>
@@ -203,6 +219,7 @@
   const root = $("#root");
   const q = $("#q");
   const sortEl = $("#sort");
+  const languageEl = $("#language");
   const meta = $("#meta");
   const theme = $("#theme");
 
@@ -228,6 +245,7 @@
   });
   q.addEventListener("input", render);
   sortEl.addEventListener("change", render);
+  languageEl.addEventListener("change", render);
 
   // ---- Data ----
   let books = [];
@@ -245,6 +263,7 @@
         meta.textContent = "This file was created by a newer Pitaka. Re-publish from your phone to update the viewer.";
       }
       books = Array.isArray(data.books) ? data.books : [];
+      populateFacets();
       render();
     } catch (e) {
       loadError = e.message || String(e);
@@ -258,27 +277,68 @@
     }[c]));
   }
 
+  // Populate the language facet dropdown from the loaded data.
+  // Distinct, case-insensitive, sorted; preserves the leading "All …" option.
+  function populateFacets() {
+    const seen = new Map(); // lowercase -> original
+    for (const b of books) {
+      const v = (b.language || "").trim();
+      if (v && !seen.has(v.toLowerCase())) seen.set(v.toLowerCase(), v);
+    }
+    const values = [...seen.values()].sort((a, b) => a.localeCompare(b));
+    languageEl.innerHTML = `<option value="">All languages</option>` +
+      values.map((v) => `<option value="${escape(v)}">${escape(v)}</option>`).join("");
+  }
+
+  // Age-group ordinal (for sort) + label (for the badge). Mirrors the Kotlin
+  // Book.AgeGroup enum: declaration order IS sort order.
+  const AGE_ORDER = { AGE_0_5: 0, AGE_6_10: 1, AGE_11_16: 2, ADVANCE: 3 };
+  const AGE_LABEL = { AGE_0_5: "0–5", AGE_6_10: "6–10", AGE_11_16: "11–16", ADVANCE: "Advance" };
+
+  // Coarse availability badge (v4). Only "available" / "out" (or nothing).
+  function availBadge(b) {
+    if (b.availability === "available") return ` <span class="avail avail-available">Available</span>`;
+    if (b.availability === "out") return ` <span class="avail avail-out">All out</span>`;
+    return "";
+  }
+
+  // Age-group badge (v5). Shown when the book carries an age band.
+  function ageBadge(b) {
+    const label = AGE_LABEL[b.ageGroup];
+    return label ? ` <span class="avail avail-age">${label}</span>` : "";
+  }
+
   function filterAndSort() {
     const needle = q.value.trim().toLowerCase();
     const sortKey = sortEl.value;
+    const languageSel = languageEl.value.toLowerCase();
     let out = books.slice();
+    if (languageSel) out = out.filter((b) => (b.language || "").toLowerCase() === languageSel);
     if (needle) {
       out = out.filter((b) => {
         const t = (b.title || "").toLowerCase();
         const tt = (b.titleTransliteration || "").toLowerCase();
         const a = (b.author || "").toLowerCase();
+        const g = (b.genre || "").toLowerCase();
         const i = (b.isbn || "").toLowerCase();
-        return t.indexOf(needle) >= 0 || tt.indexOf(needle) >= 0 || a.indexOf(needle) >= 0 || i.indexOf(needle) >= 0;
+        return t.indexOf(needle) >= 0 || tt.indexOf(needle) >= 0 || a.indexOf(needle) >= 0 ||
+               g.indexOf(needle) >= 0 || i.indexOf(needle) >= 0;
       });
     }
     out.sort((a, b) => {
-      const av = (a[sortKey] == null) ? "" : a[sortKey];
-      const bv = (b[sortKey] == null) ? "" : b[sortKey];
-      if (sortKey === "addedDate" || sortKey === "publishedYear") {
-        // numeric desc
-        return (Number(bv) || 0) - (Number(av) || 0);
+      if (sortKey === "addedDate") {
+        return (Number(b.addedDate) || 0) - (Number(a.addedDate) || 0);
       }
-      return String(av).localeCompare(String(bv));
+      if (sortKey === "ageGroup") {
+        // Ordinal order; unset (undefined) sorts last.
+        const av = (a.ageGroup in AGE_ORDER) ? AGE_ORDER[a.ageGroup] : 99;
+        const bv = (b.ageGroup in AGE_ORDER) ? AGE_ORDER[b.ageGroup] : 99;
+        return av - bv;
+      }
+      // language (or any string key): blanks last, then locale compare.
+      const av = (a[sortKey] == null || a[sortKey] === "") ? "\uffff" : String(a[sortKey]);
+      const bv = (b[sortKey] == null || b[sortKey] === "") ? "\uffff" : String(b[sortKey]);
+      return av.localeCompare(bv);
     });
     return out;
   }
@@ -300,7 +360,7 @@
   function renderTable(list) {
     const rows = list.map((b) => `
       <tr>
-        <td>${escape(b.title)}${b.titleTransliteration ? `<br><span class="meta">${escape(b.titleTransliteration)}</span>` : ""}</td>
+        <td>${escape(b.title)}${availBadge(b)}${ageBadge(b)}${b.titleTransliteration ? `<br><span class="meta">${escape(b.titleTransliteration)}</span>` : ""}</td>
         <td>${escape(b.author || "")}</td>
         <td>${escape(b.publishedYear || "")}</td>
         <td>${escape(b.isbn || "")}</td>
@@ -319,7 +379,7 @@
   function renderCards(list) {
     return `<div class="cards">` + list.map((b) => `
       <div class="card">
-        <h3>${escape(b.title)}</h3>
+        <h3>${escape(b.title)}${availBadge(b)}${ageBadge(b)}</h3>
         ${b.titleTransliteration ? `<div class="row">${escape(b.titleTransliteration)}</div>` : ""}
         <div class="author">${escape(b.author || "")}</div>
         <div class="row">
@@ -343,7 +403,7 @@
     return `<div class="grid">` + list.map((b) => `
       <figure>
         <img src="${b.coverUrl ? escape(b.coverUrl) : placeholder}" alt="${escape(b.title)}" loading="lazy" onerror="this.src='${placeholder}'" />
-        <figcaption><span class="title">${escape(b.title)}</span></figcaption>
+        <figcaption><span class="title">${escape(b.title)}</span>${availBadge(b)}${ageBadge(b)}</figcaption>
       </figure>
     `).join("") + `</div>`;
   }
