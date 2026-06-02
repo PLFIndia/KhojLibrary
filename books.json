@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1780395594094,
+  "exportedAt": 1780398086344,
   "books": [
     {
       "title": "पापा जब बच्चे थे",
@@ -167,7 +167,7 @@
       "publishedYear": 2007,
       "genre": "British, india, India, history, british occupation, 1765-1947, India, politics and government, 1765-1947",
       "language": "English",
-      "coverUrl": "https://covers.openlibrary.org/b/id/1188894-M.jpg",
+      "coverUrl": "covers/4adf27533c285c0f.jpg",
       "ageGroup": "ADVANCE"
     },
     {
@@ -178,7 +178,7 @@
       "publishedYear": 2017,
       "genre": "Computer science, Computer algorithms, Programming languages (electronic computers)",
       "language": "English",
-      "coverUrl": "https://covers.openlibrary.org/b/id/10194609-M.jpg",
+      "coverUrl": "covers/2954cfad216db452.jpg",
       "ageGroup": "ADVANCE"
     },
     {

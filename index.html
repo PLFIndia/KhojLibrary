@@ -308,6 +308,11 @@
     return label ? ` <span class="avail avail-age">${label}</span>` : "";
   }
 
+  // Plain age-band label for the table's Age column (v6). Empty when unset.
+  function ageText(b) {
+    return AGE_LABEL[b.ageGroup] || "";
+  }
+
   function filterAndSort() {
     const needle = q.value.trim().toLowerCase();
     const sortKey = sortEl.value;
@@ -360,8 +365,9 @@
   function renderTable(list) {
     const rows = list.map((b) => `
       <tr>
-        <td>${escape(b.title)}${availBadge(b)}${ageBadge(b)}${b.titleTransliteration ? `<br><span class="meta">${escape(b.titleTransliteration)}</span>` : ""}</td>
+        <td>${escape(b.title)}${availBadge(b)}${b.titleTransliteration ? `<br><span class="meta">${escape(b.titleTransliteration)}</span>` : ""}</td>
         <td>${escape(b.author || "")}</td>
+        <td>${escape(ageText(b))}</td>
         <td>${escape(b.publishedYear || "")}</td>
         <td>${escape(b.isbn || "")}</td>
       </tr>
@@ -369,7 +375,7 @@
     return `
       <table>
         <thead>
-          <tr><th>Title</th><th>Author</th><th>Year</th><th>ISBN</th></tr>
+          <tr><th>Title</th><th>Author</th><th>Age</th><th>Year</th><th>ISBN</th></tr>
         </thead>
         <tbody>${rows}</tbody>
       </table>
