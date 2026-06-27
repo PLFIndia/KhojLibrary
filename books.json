@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1782552363628,
+  "exportedAt": 1782567029502,
   "books": [
     {
       "title": "Alberuni's India",
@@ -9,7 +9,7 @@
       "publisher": "Rupa & Co.",
       "publishedYear": 2002,
       "genre": "India, history",
-      "coverUrl": "covers/4c8687cdcffd60cb.jpg"
+      "coverUrl": "covers/379a34879bcd1821.jpg"
     },
     {
       "title": "भारत: गांधी के बाद",
@@ -20,7 +20,7 @@
       "publishedYear": 2012,
       "genre": "History, Indian History",
       "language": "Hindi",
-      "coverUrl": "covers/80db82831b1bdc47.jpg",
+      "coverUrl": "covers/553e026a97142dba.jpg",
       "ageGroup": "advanced"
     },
     {
@@ -173,7 +173,7 @@
       "publishedYear": 2007,
       "genre": "British, india, India, history, british occupation, 1765-1947, India, politics and government, 1765-1947",
       "language": "English",
-      "coverUrl": "covers/45f43ae149b6f3c4.jpg",
+      "coverUrl": "covers/74f4acafd74e7065.jpg",
       "ageGroup": "advanced"
     },
     {
@@ -184,7 +184,7 @@
       "publishedYear": 2017,
       "genre": "Computer science, Computer algorithms, Programming languages (electronic computers)",
       "language": "English",
-      "coverUrl": "covers/9710c40edc473b6b.jpg",
+      "coverUrl": "covers/6738f827fd2f2578.jpg",
       "ageGroup": "advanced"
     },
     {
