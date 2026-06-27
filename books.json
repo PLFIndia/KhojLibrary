@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1782567111807,
+  "exportedAt": 1782567412709,
   "books": [
     {
       "title": "Alberuni's India",
@@ -9,7 +9,8 @@
       "publisher": "Rupa & Co.",
       "publishedYear": 2002,
       "genre": "India, history",
-      "coverUrl": "covers/379a34879bcd1821.jpg"
+      "coverUrl": "covers/379a34879bcd1821.jpg",
+      "availability": "available"
     },
     {
       "title": "भारत: गांधी के बाद",
@@ -21,7 +22,8 @@
       "genre": "History, Indian History",
       "language": "Hindi",
       "coverUrl": "covers/553e026a97142dba.jpg",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "पापा जब बच्चे थे",
@@ -30,7 +32,8 @@
       "publisher": "People's publishing house",
       "genre": "Kids",
       "language": "Hindi",
-      "ageGroup": "above-6"
+      "ageGroup": "above-6",
+      "availability": "available"
     },
     {
       "title": "Fraternity: constitutional norm and human need",
@@ -39,7 +42,8 @@
       "publisher": "speaking Tiger",
       "genre": "Indian constitution",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "We, the People, and Our Constitution",
@@ -48,7 +52,8 @@
       "publisher": "Speaking Tiger",
       "genre": "Indian constitution",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Liberty: The Indian Story",
@@ -57,7 +62,8 @@
       "publisher": "Speaking Tiger",
       "genre": "Indian constitution",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Why We Die: The New Science of Ageing and the Quest for Immortality",
@@ -67,7 +73,8 @@
       "publishedYear": 2024,
       "genre": "Public health",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Nexus",
@@ -77,7 +84,8 @@
       "publishedYear": 2024,
       "genre": "Information network, History",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Aryans, Jews, Brahmins: Theorizing authority through myths of identity",
@@ -86,7 +94,8 @@
       "publisher": "Navyana",
       "genre": "History",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "What the Buddha taught.",
@@ -95,7 +104,8 @@
       "publisher": "Oneworld Publications",
       "publishedYear": 1974,
       "genre": "Buddhism",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "तरकश",
@@ -105,7 +115,8 @@
       "publisher": "राजकमल",
       "genre": "शायरी",
       "language": "Urdu",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "उर्दू शायरी का शब्द संसार",
@@ -115,7 +126,8 @@
       "publisher": "Rekhta Publications",
       "genre": "Urdu Learning",
       "language": "Urdu",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "रेख्ता उर्दू लर्निंग गाइड",
@@ -125,7 +137,8 @@
       "publisher": "Rekhta Publications",
       "genre": "Urdu Learning",
       "language": "Urdu",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "उर्दू शब्दों का गुलदस्ता",
@@ -135,7 +148,8 @@
       "publisher": "Rekhta Publications",
       "genre": "Urdu",
       "language": "Urdu",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "हर मौके के लिए एक शेर",
@@ -145,7 +159,8 @@
       "publisher": "Rekhta Books",
       "genre": "shayari",
       "language": "Urdu",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Kabir ke dohe",
@@ -153,7 +168,8 @@
       "isbn": "9789370891319",
       "publisher": "Finger Print",
       "language": "Hindi",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Code",
@@ -163,7 +179,8 @@
       "publishedYear": 2000,
       "genre": "Computer programming, Coding theory, Datenverarbeitung",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "The Ruling Caste: Imperial Lives in the Victorian Raj",
@@ -174,7 +191,8 @@
       "genre": "British, india, India, history, british occupation, 1765-1947, India, politics and government, 1765-1947",
       "language": "English",
       "coverUrl": "covers/74f4acafd74e7065.jpg",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Computer Science Distilled: Learn the Art of Solving Computational Problems",
@@ -185,7 +203,8 @@
       "genre": "Computer science, Computer algorithms, Programming languages (electronic computers)",
       "language": "English",
       "coverUrl": "covers/6738f827fd2f2578.jpg",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Computer Science Unleashed: Harness the Power of Computational Systems",
@@ -195,7 +214,8 @@
       "publishedYear": 2021,
       "genre": "Computers, Internet",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     }
   ]
 }
