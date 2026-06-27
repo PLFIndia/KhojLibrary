@@ -1,7 +1,16 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1780405614620,
+  "exportedAt": 1782552363628,
   "books": [
+    {
+      "title": "Alberuni's India",
+      "author": "Dr. Edward C. Sachau",
+      "isbn": "9788171676408",
+      "publisher": "Rupa & Co.",
+      "publishedYear": 2002,
+      "genre": "India, history",
+      "coverUrl": "covers/4c8687cdcffd60cb.jpg"
+    },
     {
       "title": "भारत: गांधी के बाद",
       "titleTransliteration": "Bharat: Gandhi Ke Baad",
@@ -11,9 +20,8 @@
       "publishedYear": 2012,
       "genre": "History, Indian History",
       "language": "Hindi",
-      "coverUrl": "covers/bea6389da6e4f2c6.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "coverUrl": "covers/80db82831b1bdc47.jpg",
+      "ageGroup": "advanced"
     },
     {
       "title": "पापा जब बच्चे थे",
@@ -22,9 +30,7 @@
       "publisher": "People's publishing house",
       "genre": "Kids",
       "language": "Hindi",
-      "coverUrl": "covers/bb6c8343bf9eb4ec.jpg",
-      "ageGroup": "AGE_6_10",
-      "availability": "available"
+      "ageGroup": "above-6"
     },
     {
       "title": "Fraternity: constitutional norm and human need",
@@ -33,9 +39,7 @@
       "publisher": "speaking Tiger",
       "genre": "Indian constitution",
       "language": "English",
-      "coverUrl": "covers/b1aa1dd1a97a921c.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "ageGroup": "advanced"
     },
     {
       "title": "We, the People, and Our Constitution",
@@ -44,9 +48,7 @@
       "publisher": "Speaking Tiger",
       "genre": "Indian constitution",
       "language": "English",
-      "coverUrl": "covers/94048f4c9b09c6c4.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "ageGroup": "advanced"
     },
     {
       "title": "Liberty: The Indian Story",
@@ -55,9 +57,7 @@
       "publisher": "Speaking Tiger",
       "genre": "Indian constitution",
       "language": "English",
-      "coverUrl": "covers/5ba959b43bf48727.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "ageGroup": "advanced"
     },
     {
       "title": "Why We Die: The New Science of Ageing and the Quest for Immortality",
@@ -67,9 +67,7 @@
       "publishedYear": 2024,
       "genre": "Public health",
       "language": "English",
-      "coverUrl": "covers/10d1ab4508f59171.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "ageGroup": "advanced"
     },
     {
       "title": "Nexus",
@@ -79,9 +77,7 @@
       "publishedYear": 2024,
       "genre": "Information network, History",
       "language": "English",
-      "coverUrl": "covers/ed5a98e7f9ac8e78.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "ageGroup": "advanced"
     },
     {
       "title": "Aryans, Jews, Brahmins: Theorizing authority through myths of identity",
@@ -90,9 +86,7 @@
       "publisher": "Navyana",
       "genre": "History",
       "language": "English",
-      "coverUrl": "covers/bfab9d823c51605b.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "ageGroup": "advanced"
     },
     {
       "title": "What the Buddha taught.",
@@ -101,9 +95,7 @@
       "publisher": "Oneworld Publications",
       "publishedYear": 1974,
       "genre": "Buddhism",
-      "coverUrl": "covers/e2d94406af520d7b.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "ageGroup": "advanced"
     },
     {
       "title": "तरकश",
@@ -113,9 +105,7 @@
       "publisher": "राजकमल",
       "genre": "शायरी",
       "language": "Urdu",
-      "coverUrl": "covers/d5975d6539cbefc2.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "ageGroup": "advanced"
     },
     {
       "title": "उर्दू शायरी का शब्द संसार",
@@ -125,9 +115,7 @@
       "publisher": "Rekhta Publications",
       "genre": "Urdu Learning",
       "language": "Urdu",
-      "coverUrl": "covers/e92e47e4d43ded10.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "ageGroup": "advanced"
     },
     {
       "title": "रेख्ता उर्दू लर्निंग गाइड",
@@ -137,9 +125,7 @@
       "publisher": "Rekhta Publications",
       "genre": "Urdu Learning",
       "language": "Urdu",
-      "coverUrl": "covers/132998f4d9975d69.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "ageGroup": "advanced"
     },
     {
       "title": "उर्दू शब्दों का गुलदस्ता",
@@ -149,9 +135,7 @@
       "publisher": "Rekhta Publications",
       "genre": "Urdu",
       "language": "Urdu",
-      "coverUrl": "covers/b28ac6e6775eb0ca.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "ageGroup": "advanced"
     },
     {
       "title": "हर मौके के लिए एक शेर",
@@ -161,9 +145,7 @@
       "publisher": "Rekhta Books",
       "genre": "shayari",
       "language": "Urdu",
-      "coverUrl": "covers/2c63edd08072c815.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "ageGroup": "advanced"
     },
     {
       "title": "Kabir ke dohe",
@@ -171,9 +153,7 @@
       "isbn": "9789370891319",
       "publisher": "Finger Print",
       "language": "Hindi",
-      "coverUrl": "covers/467314cd1a0a13bd.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "ageGroup": "advanced"
     },
     {
       "title": "Code",
@@ -183,9 +163,7 @@
       "publishedYear": 2000,
       "genre": "Computer programming, Coding theory, Datenverarbeitung",
       "language": "English",
-      "coverUrl": "covers/0caae14907c9caec.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "ageGroup": "advanced"
     },
     {
       "title": "The Ruling Caste: Imperial Lives in the Victorian Raj",
@@ -195,9 +173,8 @@
       "publishedYear": 2007,
       "genre": "British, india, India, history, british occupation, 1765-1947, India, politics and government, 1765-1947",
       "language": "English",
-      "coverUrl": "covers/4adf27533c285c0f.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "coverUrl": "covers/45f43ae149b6f3c4.jpg",
+      "ageGroup": "advanced"
     },
     {
       "title": "Computer Science Distilled: Learn the Art of Solving Computational Problems",
@@ -207,9 +184,8 @@
       "publishedYear": 2017,
       "genre": "Computer science, Computer algorithms, Programming languages (electronic computers)",
       "language": "English",
-      "coverUrl": "covers/2954cfad216db452.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "coverUrl": "covers/9710c40edc473b6b.jpg",
+      "ageGroup": "advanced"
     },
     {
       "title": "Computer Science Unleashed: Harness the Power of Computational Systems",
@@ -219,9 +195,7 @@
       "publishedYear": 2021,
       "genre": "Computers, Internet",
       "language": "English",
-      "coverUrl": "covers/7b15523fd998e1dc.jpg",
-      "ageGroup": "ADVANCE",
-      "availability": "available"
+      "ageGroup": "advanced"
     }
   ]
 }
