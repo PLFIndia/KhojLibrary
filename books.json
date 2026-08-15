@@ -1,7 +1,255 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1783837544899,
+  "exportedAt": 1786795595683,
   "books": [
+    {
+      "title": "Sense And Solidarity - Jholawala Economics for Everyone",
+      "author": "Jean Drèze",
+      "isbn": "9788178245218",
+      "publisher": "Orient BlackSwan",
+      "publishedYear": 2017,
+      "language": "English",
+      "coverUrl": "covers/73830d786d84cbcf.jpg",
+      "ageGroup": "above-15"
+    },
+    {
+      "title": "Nationalism",
+      "author": "Rabindranath Tagore",
+      "isbn": "9780143064671",
+      "publisher": "Penguin Books India PVT, Limited",
+      "publishedYear": 2017,
+      "language": "English",
+      "coverUrl": "covers/99320ca82eacf733.jpg",
+      "ageGroup": "above-15"
+    },
+    {
+      "title": "The jail notebook and other writings",
+      "author": "Bhagat Singh",
+      "isbn": "9788187496625",
+      "publisher": "LeftWord Books",
+      "publishedYear": 2007,
+      "genre": "Archives, Politics and government, Sources",
+      "language": "English",
+      "coverUrl": "covers/87789e326dcca573.jpg",
+      "ageGroup": "above-15"
+    },
+    {
+      "title": "An Autobiography",
+      "author": "Jawaharlal Nehru",
+      "isbn": "9789348572202",
+      "publisher": "Diamond Books",
+      "genre": "Autobiography",
+      "language": "English",
+      "coverUrl": "covers/9049abb28e023016.jpg",
+      "ageGroup": "above-15"
+    },
+    {
+      "title": "सीपियां",
+      "titleTransliteration": "Sipian",
+      "author": "Javed Akhtar",
+      "isbn": "9789360867867",
+      "genre": "Kabir",
+      "language": "Hindi",
+      "coverUrl": "covers/713c6daf765b0b1e.jpg",
+      "ageGroup": "above-15"
+    },
+    {
+      "title": "Complete Novels of Sherlock Holmes: Deluxe Hardbound Edition",
+      "author": "Arthur Conan Doyle",
+      "isbn": "9789387779686",
+      "publisher": "Prakash Book Depot",
+      "publishedYear": 2018,
+      "genre": "Stories",
+      "language": "English",
+      "coverUrl": "covers/8518838cc8a8fde0.jpg",
+      "ageGroup": "above-15"
+    },
+    {
+      "title": "We, the women of India",
+      "author": "Angellica Aribam, Akash Satyawali",
+      "isbn": "9789357317146",
+      "publisher": "Hachette",
+      "language": "English",
+      "coverUrl": "covers/0a399c3501015179.jpg",
+      "ageGroup": "above-15"
+    },
+    {
+      "title": "Asoka : The Buddhist emperor of India",
+      "author": "Vincent E Smith",
+      "isbn": "9789387022263",
+      "language": "English",
+      "coverUrl": "covers/ec4c22a74d5e92d4.jpg",
+      "ageGroup": "above-15"
+    },
+    {
+      "title": "What mad pursuit: a personal view of scientific discovery",
+      "author": "Francis Crick",
+      "isbn": "9780465091386",
+      "publisher": "Basic Books",
+      "publishedYear": 1988,
+      "genre": "Biography, Biologists, England",
+      "language": "English",
+      "coverUrl": "covers/a32225e25459d94a.jpg",
+      "ageGroup": "above-15"
+    },
+    {
+      "title": "Republic of Caste",
+      "author": "Anand Teltumbde",
+      "isbn": "9788189059866",
+      "publisher": "Navayana",
+      "publishedYear": 2018,
+      "genre": "Dalits, Caste, Caste-based discrimination",
+      "language": "English",
+      "coverUrl": "covers/c283b953615c1e52.jpg",
+      "ageGroup": "above-15"
+    },
+    {
+      "title": "The Caste Consensus",
+      "author": "Anand Teltumbde",
+      "isbn": "9788198697035",
+      "publisher": "Navayana",
+      "genre": "Social",
+      "language": "English",
+      "coverUrl": "covers/6d1a7a08bfb860c2.jpg",
+      "ageGroup": "above-15"
+    },
+    {
+      "title": "Great disciples of the Buddha: their lives, their works, their legacy",
+      "author": "Nyanaponika Thera",
+      "isbn": "9780861713813",
+      "publisher": "Wisdom Publications in collaboration with the Buddhist Publication Society of Kandy, Sri Lanka",
+      "publishedYear": 2003,
+      "genre": "Biography, Disciples, RELIGION / Eastern",
+      "coverUrl": "covers/3b9cd9f957dab54f.jpg",
+      "ageGroup": "above-15"
+    },
+    {
+      "title": "Buddha",
+      "author": "Osamu Tezuka",
+      "isbn": "9780007942480",
+      "publisher": "HarperCollins Publishers Limited",
+      "publishedYear": 2014,
+      "genre": "Buddha",
+      "language": "English",
+      "coverUrl": "covers/dab54885f8d44c05.jpg",
+      "ageGroup": "above-10"
+    },
+    {
+      "title": "Know your Sport",
+      "isbn": "9789388372404",
+      "publisher": "DK",
+      "genre": "Sports",
+      "language": "English",
+      "coverUrl": "covers/fcf516722ab4f280.jpg",
+      "ageGroup": "above-6"
+    },
+    {
+      "title": "100 Indian Trees",
+      "isbn": "9789388372213",
+      "publisher": "DK",
+      "genre": "Plants",
+      "language": "English",
+      "coverUrl": "covers/026df370ee5c7b23.jpg",
+      "ageGroup": "above-6"
+    },
+    {
+      "title": "Indira Gandhi",
+      "author": "Chitra Subramanyam",
+      "isbn": "9780241356876",
+      "publisher": "DK",
+      "genre": "Personalities",
+      "language": "English",
+      "coverUrl": "covers/49496a2ef41069d2.jpg",
+      "ageGroup": "above-10"
+    },
+    {
+      "title": "Mohandas K Gandhi",
+      "author": "Bharat Shekhar",
+      "isbn": "9780241316245",
+      "publisher": "DK",
+      "genre": "Personalities",
+      "language": "English",
+      "coverUrl": "covers/d8b1ce31a0e01014.jpg",
+      "ageGroup": "above-10"
+    },
+    {
+      "title": "100 Indian Garden Flowers",
+      "isbn": "9789388372206",
+      "publisher": "DK",
+      "genre": "Plants",
+      "language": "English",
+      "coverUrl": "covers/1ea1a6cb06bd0dee.jpg",
+      "ageGroup": "above-6"
+    },
+    {
+      "title": "100 Indian Birds",
+      "isbn": "9789388372183",
+      "publisher": "DK",
+      "genre": "Birds",
+      "language": "English",
+      "coverUrl": "covers/06b804dc83431328.jpg",
+      "ageGroup": "above-6"
+    },
+    {
+      "title": "100 Indian Animals",
+      "isbn": "9789388372220",
+      "publisher": "DK",
+      "genre": "General, Animals",
+      "language": "English",
+      "coverUrl": "covers/c8066fd57f054396.jpg",
+      "ageGroup": "above-6"
+    },
+    {
+      "title": "APJ Abdul Kalam",
+      "author": "Sudha Umashankar",
+      "isbn": "9788195565979",
+      "publisher": "DK",
+      "genre": "Personalities",
+      "language": "English",
+      "coverUrl": "covers/c660dfb9f4e86970.jpg",
+      "ageGroup": "above-10"
+    },
+    {
+      "title": "Bhimrao Ambedkar",
+      "author": "Dr Anurima Chanda",
+      "isbn": "9780241356906",
+      "publisher": "DK",
+      "genre": "Personalities",
+      "language": "English",
+      "coverUrl": "covers/fcbf32ab8827e651.jpg",
+      "ageGroup": "above-10"
+    },
+    {
+      "title": "Fractured Communities: Adivasi Histories and the Politics of Power",
+      "author": "Umar Khalid",
+      "isbn": "9789353456368",
+      "publisher": "Juggernaut",
+      "publishedYear": 2026,
+      "genre": "History, Society",
+      "language": "English",
+      "coverUrl": "covers/4acad86579e16631.jpg",
+      "ageGroup": "above-15"
+    },
+    {
+      "title": "Legend of King Asoka",
+      "author": "John S. Strong",
+      "isbn": "9788120806160",
+      "publisher": "Motilal Banarsidass,India",
+      "publishedYear": 2002,
+      "genre": "Asoka, king of magadha, active 259 b.c., Legends, Criticism, interpretation",
+      "coverUrl": "covers/d20c14c649652aa9.jpg",
+      "ageGroup": "above-15"
+    },
+    {
+      "title": "Long Walk to Freedom",
+      "author": "Nelson Mandela",
+      "isbn": "9780349106533",
+      "publisher": "Abacus",
+      "publishedYear": 2008,
+      "genre": "Biography, Politics and government, Presidents",
+      "coverUrl": "covers/64aa9966810d8c1d.jpg",
+      "ageGroup": "above-15"
+    },
     {
       "title": "Unstoppable Us (Volume 2)",
       "author": "Yuval Noah Harari",
