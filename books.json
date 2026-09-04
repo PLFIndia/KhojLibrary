@@ -1,7 +1,16 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1786795595683,
+  "exportedAt": 1788511342342,
   "books": [
+    {
+      "title": "Physics: Principles with Applications, Global Edition",
+      "author": "Douglas Giancoli",
+      "isbn": "9781292057125",
+      "publisher": "Pearson Higher Education & Professional Group",
+      "publishedYear": 2015,
+      "genre": "Physics, Textbooks",
+      "ageGroup": "above-15"
+    },
     {
       "title": "Sense And Solidarity - Jholawala Economics for Everyone",
       "author": "Jean Drèze",
@@ -9,7 +18,7 @@
       "publisher": "Orient BlackSwan",
       "publishedYear": 2017,
       "language": "English",
-      "coverUrl": "covers/73830d786d84cbcf.jpg",
+      "coverUrl": "covers/d4d3938b656c4bad.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -19,7 +28,7 @@
       "publisher": "Penguin Books India PVT, Limited",
       "publishedYear": 2017,
       "language": "English",
-      "coverUrl": "covers/99320ca82eacf733.jpg",
+      "coverUrl": "covers/17dc7bd75abf7474.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -30,7 +39,7 @@
       "publishedYear": 2007,
       "genre": "Archives, Politics and government, Sources",
       "language": "English",
-      "coverUrl": "covers/87789e326dcca573.jpg",
+      "coverUrl": "covers/1f4acb103b3a6407.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -40,7 +49,7 @@
       "publisher": "Diamond Books",
       "genre": "Autobiography",
       "language": "English",
-      "coverUrl": "covers/9049abb28e023016.jpg",
+      "coverUrl": "covers/e753ef18d1c23aab.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -50,7 +59,7 @@
       "isbn": "9789360867867",
       "genre": "Kabir",
       "language": "Hindi",
-      "coverUrl": "covers/713c6daf765b0b1e.jpg",
+      "coverUrl": "covers/9bf9a32055b465cc.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -61,7 +70,7 @@
       "publishedYear": 2018,
       "genre": "Stories",
       "language": "English",
-      "coverUrl": "covers/8518838cc8a8fde0.jpg",
+      "coverUrl": "covers/42acaeeac5932a75.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -70,7 +79,7 @@
       "isbn": "9789357317146",
       "publisher": "Hachette",
       "language": "English",
-      "coverUrl": "covers/0a399c3501015179.jpg",
+      "coverUrl": "covers/b86cbff2ab67297b.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -78,7 +87,7 @@
       "author": "Vincent E Smith",
       "isbn": "9789387022263",
       "language": "English",
-      "coverUrl": "covers/ec4c22a74d5e92d4.jpg",
+      "coverUrl": "covers/606cbad4bcf80c22.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -89,7 +98,7 @@
       "publishedYear": 1988,
       "genre": "Biography, Biologists, England",
       "language": "English",
-      "coverUrl": "covers/a32225e25459d94a.jpg",
+      "coverUrl": "covers/0dfc80cb3d4a754c.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -100,7 +109,7 @@
       "publishedYear": 2018,
       "genre": "Dalits, Caste, Caste-based discrimination",
       "language": "English",
-      "coverUrl": "covers/c283b953615c1e52.jpg",
+      "coverUrl": "covers/947cda9b3d4a9649.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -110,7 +119,7 @@
       "publisher": "Navayana",
       "genre": "Social",
       "language": "English",
-      "coverUrl": "covers/6d1a7a08bfb860c2.jpg",
+      "coverUrl": "covers/21e8b46bfa6f19ff.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -120,7 +129,7 @@
       "publisher": "Wisdom Publications in collaboration with the Buddhist Publication Society of Kandy, Sri Lanka",
       "publishedYear": 2003,
       "genre": "Biography, Disciples, RELIGION / Eastern",
-      "coverUrl": "covers/3b9cd9f957dab54f.jpg",
+      "coverUrl": "covers/80f00c125e0fe1ed.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -131,7 +140,7 @@
       "publishedYear": 2014,
       "genre": "Buddha",
       "language": "English",
-      "coverUrl": "covers/dab54885f8d44c05.jpg",
+      "coverUrl": "covers/997dc0d76241f206.jpg",
       "ageGroup": "above-10"
     },
     {
@@ -140,7 +149,7 @@
       "publisher": "DK",
       "genre": "Sports",
       "language": "English",
-      "coverUrl": "covers/fcf516722ab4f280.jpg",
+      "coverUrl": "covers/6f9d93e444b9d61c.jpg",
       "ageGroup": "above-6"
     },
     {
@@ -149,7 +158,7 @@
       "publisher": "DK",
       "genre": "Plants",
       "language": "English",
-      "coverUrl": "covers/026df370ee5c7b23.jpg",
+      "coverUrl": "covers/f3dedb03bb9afb5c.jpg",
       "ageGroup": "above-6"
     },
     {
@@ -159,7 +168,7 @@
       "publisher": "DK",
       "genre": "Personalities",
       "language": "English",
-      "coverUrl": "covers/49496a2ef41069d2.jpg",
+      "coverUrl": "covers/19af185565777211.jpg",
       "ageGroup": "above-10"
     },
     {
@@ -169,7 +178,7 @@
       "publisher": "DK",
       "genre": "Personalities",
       "language": "English",
-      "coverUrl": "covers/d8b1ce31a0e01014.jpg",
+      "coverUrl": "covers/6b4f67dca1686edb.jpg",
       "ageGroup": "above-10"
     },
     {
@@ -178,7 +187,7 @@
       "publisher": "DK",
       "genre": "Plants",
       "language": "English",
-      "coverUrl": "covers/1ea1a6cb06bd0dee.jpg",
+      "coverUrl": "covers/704f128563c7be06.jpg",
       "ageGroup": "above-6"
     },
     {
@@ -187,7 +196,7 @@
       "publisher": "DK",
       "genre": "Birds",
       "language": "English",
-      "coverUrl": "covers/06b804dc83431328.jpg",
+      "coverUrl": "covers/0b5a0ba9f89d6265.jpg",
       "ageGroup": "above-6"
     },
     {
@@ -196,7 +205,7 @@
       "publisher": "DK",
       "genre": "General, Animals",
       "language": "English",
-      "coverUrl": "covers/c8066fd57f054396.jpg",
+      "coverUrl": "covers/a6405c1337e84a3d.jpg",
       "ageGroup": "above-6"
     },
     {
@@ -206,7 +215,7 @@
       "publisher": "DK",
       "genre": "Personalities",
       "language": "English",
-      "coverUrl": "covers/c660dfb9f4e86970.jpg",
+      "coverUrl": "covers/38cc9d463b0fb313.jpg",
       "ageGroup": "above-10"
     },
     {
@@ -216,7 +225,7 @@
       "publisher": "DK",
       "genre": "Personalities",
       "language": "English",
-      "coverUrl": "covers/fcbf32ab8827e651.jpg",
+      "coverUrl": "covers/1de925e6f6f65f56.jpg",
       "ageGroup": "above-10"
     },
     {
@@ -227,7 +236,7 @@
       "publishedYear": 2026,
       "genre": "History, Society",
       "language": "English",
-      "coverUrl": "covers/4acad86579e16631.jpg",
+      "coverUrl": "covers/dec5d3a6fff05913.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -237,7 +246,7 @@
       "publisher": "Motilal Banarsidass,India",
       "publishedYear": 2002,
       "genre": "Asoka, king of magadha, active 259 b.c., Legends, Criticism, interpretation",
-      "coverUrl": "covers/d20c14c649652aa9.jpg",
+      "coverUrl": "covers/66ce4700c6b8a308.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -247,7 +256,7 @@
       "publisher": "Abacus",
       "publishedYear": 2008,
       "genre": "Biography, Politics and government, Presidents",
-      "coverUrl": "covers/64aa9966810d8c1d.jpg",
+      "coverUrl": "covers/6f597a61138850bd.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -257,7 +266,7 @@
       "publisher": "Sapienship Storytelling",
       "genre": "History, Anthropology",
       "language": "English",
-      "coverUrl": "covers/a348eb7f6e213de3.jpg",
+      "coverUrl": "covers/faebf82497218f60.jpg",
       "ageGroup": "above-10"
     },
     {
@@ -268,7 +277,7 @@
       "publisher": "Penguin",
       "genre": "Buddhism",
       "language": "Hindi",
-      "coverUrl": "covers/acec4eb67f017846.jpg",
+      "coverUrl": "covers/ca822d4fe360b863.jpg",
       "ageGroup": "advanced"
     },
     {
@@ -279,7 +288,7 @@
       "publisher": "penguin",
       "genre": "Autobiography",
       "language": "Hindi",
-      "coverUrl": "covers/2649308c37078e4f.jpg",
+      "coverUrl": "covers/979c66a76a3db1c1.jpg",
       "ageGroup": "advanced"
     },
     {
@@ -289,7 +298,7 @@
       "publisher": "Hind Yugm",
       "genre": "Poetry",
       "language": "Hindi",
-      "coverUrl": "covers/37ed973a80031fda.jpg",
+      "coverUrl": "covers/0cd596d1d17a663a.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -298,7 +307,7 @@
       "publisher": "Manjul",
       "genre": "History, Anthropology",
       "language": "Hindi",
-      "coverUrl": "covers/a1ab85d904aa324f.jpg",
+      "coverUrl": "covers/5220b468c6322de9.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -309,7 +318,7 @@
       "publisher": "Rekha books",
       "genre": "Poetry",
       "language": "Urdu",
-      "coverUrl": "covers/5f8d6902d46b78d8.jpg",
+      "coverUrl": "covers/d53f7384b39a95de.jpg",
       "ageGroup": "advanced"
     },
     {
@@ -319,7 +328,7 @@
       "publisher": "Sapienship Storytelling",
       "genre": "History, Anthropology",
       "language": "English",
-      "coverUrl": "covers/5d769cef88d0da4b.jpg",
+      "coverUrl": "covers/422a0abf8ab8ad06.jpg",
       "ageGroup": "above-10"
     },
     {
@@ -329,7 +338,7 @@
       "isbn": "9788126705276",
       "publisher": "Rajkamal",
       "language": "Urdu",
-      "coverUrl": "covers/5e051cf7c648af7e.jpg",
+      "coverUrl": "covers/12a77c0e70e04c77.jpg",
       "ageGroup": "advanced"
     },
     {
@@ -339,7 +348,7 @@
       "publisher": "Forgotten Books",
       "genre": "Sanskrit Literature",
       "language": "English",
-      "coverUrl": "covers/94325caf6807de46.jpg",
+      "coverUrl": "covers/1124fde6dfe38c53.jpg",
       "ageGroup": "advanced"
     },
     {
@@ -349,7 +358,7 @@
       "publisher": "Prometheus Books",
       "publishedYear": 1995,
       "genre": "Mechanics, Dynamics of a particle, Gravitation",
-      "coverUrl": "covers/4f5f3c5258dd5ffe.jpg",
+      "coverUrl": "covers/01a32a0484728fe3.jpg",
       "ageGroup": "advanced"
     },
     {
@@ -359,7 +368,7 @@
       "publisher": "MIT Press",
       "publishedYear": 2021,
       "genre": "Engineering",
-      "coverUrl": "covers/c436e473785ae7ac.jpg",
+      "coverUrl": "covers/82541154a0e3c048.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -369,7 +378,7 @@
       "publisher": "Random House India",
       "publishedYear": 2008,
       "genre": "Journalists, Autonomy and independence movements, Ethnic relations",
-      "coverUrl": "covers/8d05fb64428f37a7.jpg",
+      "coverUrl": "covers/7a56f7f65a50400b.jpg",
       "ageGroup": "advanced"
     },
     {
@@ -379,7 +388,7 @@
       "publisher": "Dover",
       "publishedYear": 1985,
       "genre": "Mathematics",
-      "coverUrl": "covers/bfcdbbf4b0ad527b.jpg",
+      "coverUrl": "covers/68c4a33201256bd3.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -390,7 +399,7 @@
       "publishedYear": 2009,
       "genre": "Wisdom, Love, Neuropsychology",
       "language": "English",
-      "coverUrl": "covers/12b8f7f597ecf274.jpg",
+      "coverUrl": "covers/76d2b255af36c290.jpg",
       "ageGroup": "above-15"
     },
     {
@@ -400,7 +409,7 @@
       "publisher": "Rupa Publications",
       "publishedYear": 2015,
       "genre": "Juvenile literature, History",
-      "coverUrl": "covers/cf60202159f4bd3f.jpg",
+      "coverUrl": "covers/fd69c661f720d092.jpg",
       "ageGroup": "above-10"
     },
     {
@@ -410,7 +419,7 @@
       "publisher": "Rupa & Co.",
       "publishedYear": 2002,
       "genre": "India, history",
-      "coverUrl": "covers/52ec12f0f2fa25cd.jpg"
+      "coverUrl": "covers/ae23c761ef246d36.jpg"
     },
     {
       "title": "अपनी - अपनी बीमारी",
@@ -472,7 +481,7 @@
       "publishedYear": 2012,
       "genre": "History, Indian History",
       "language": "Hindi",
-      "coverUrl": "covers/bfb743aabd4aa7a8.jpg",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10287430-M.jpg",
       "ageGroup": "advanced"
     },
     {
@@ -625,7 +634,7 @@
       "publishedYear": 2007,
       "genre": "British, india, India, history, british occupation, 1765-1947, India, politics and government, 1765-1947",
       "language": "English",
-      "coverUrl": "covers/a53153717affdde2.jpg",
+      "coverUrl": "covers/8e80f6689ba0f4f2.jpg",
       "ageGroup": "advanced"
     },
     {
@@ -636,7 +645,7 @@
       "publishedYear": 2017,
       "genre": "Computer science, Computer algorithms, Programming languages (electronic computers)",
       "language": "English",
-      "coverUrl": "covers/7eba8360141ab2c8.jpg",
+      "coverUrl": "https://covers.openlibrary.org/b/id/10194609-M.jpg",
       "ageGroup": "advanced"
     },
     {
