@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1788511342342,
+  "exportedAt": 1788511827172,
   "books": [
     {
       "title": "Physics: Principles with Applications, Global Edition",
@@ -9,6 +9,7 @@
       "publisher": "Pearson Higher Education & Professional Group",
       "publishedYear": 2015,
       "genre": "Physics, Textbooks",
+      "coverUrl": "covers/fdda94151b80d500.jpg",
       "ageGroup": "above-15"
     },
     {
