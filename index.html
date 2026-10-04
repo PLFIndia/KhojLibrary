@@ -32,15 +32,18 @@
 <!--
   F-09: Content-Security-Policy.
   default-src 'self' is the catch-all deny; everything else is an
-  explicit grant. img-src mirrors CoverUrlAllowList.ALLOWED_HOSTS
-  in the Kotlin publisher; any drift between the two is caught by
-  PublishViewerCspTest. 'unsafe-inline' on script/style is honest:
+  explicit grant. img-src mirrors CoverUrlAllowList.allowedHosts (+
+  the *.us.archive.org wildcard for CoverUrlAllowList.archiveNodePattern:
+  Open Library redirects about half of its covers through archive.org to
+  ia<digits>.us.archive.org storage nodes, D-3); any drift between the
+  list and this header is caught by viewer_csp_lockstep_test.dart.
+  'unsafe-inline' on script/style is honest:
   the viewer is a single self-contained file built around inline
   <style> and <script>. It does not protect against XSS in this
   document, but the F-09 threat is cross-origin image exfiltration,
   which img-src handles regardless of script-src.
 -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://covers.openlibrary.org https://books.google.com https://books.googleusercontent.com; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://covers.openlibrary.org https://books.google.com https://books.googleusercontent.com https://archive.org https://*.us.archive.org; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'" />
 <title>Khoj Library</title>
 <style>
   :root {
@@ -157,6 +160,9 @@
   main { padding: 16px 20px 48px; }
 
   /* Layouts */
+  /* N12: wide tables scroll sideways on narrow screens instead of breaking
+     the page layout. */
+  .layout-table { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .layout-table table { width: 100%; border-collapse: collapse; }
   .layout-table th, .layout-table td {
     padding: 8px 10px;
@@ -231,19 +237,19 @@
     <span class="txt">See what's happening at the library</span>
     <span class="go">Events →</span>
   </a>
-  
+  <div class="contact"><a class="contact-item" href="https://www.google.com/maps/search/?api=1&amp;query=6070%20G.%20Block%20Aerocity%20Mohali" target="_blank" rel="noopener noreferrer">📍 6070 G. Block Aerocity Mohali</a></div>
   <div class="controls">
-    <input id="q" type="search" placeholder="Search title, author, genre, ISBN" autocomplete="off" />
-    <select id="sort">
+    <input id="q" type="search" placeholder="Search title, author, genre, ISBN" aria-label="Search the catalogue" autocomplete="off" />
+    <select id="sort" aria-label="Sort books by">
       <option value="addedDate">Recently added</option>
       <option value="language">Language</option>
       <option value="ageGroup">Age group</option>
     </select>
-    <select id="language"><option value="">All languages</option></select>
-    <button data-layout="table" class="active">Table</button>
-    <button data-layout="card">Cards</button>
-    <button data-layout="grid">Covers</button>
-    <button id="theme" title="Toggle dark mode">🌗</button>
+    <select id="language" aria-label="Filter by language"><option value="">All languages</option></select>
+    <button data-layout="table" class="active" aria-label="Table layout" aria-pressed="true">Table</button>
+    <button data-layout="card" aria-label="Card layout" aria-pressed="false">Cards</button>
+    <button data-layout="grid" aria-label="Cover grid layout" aria-pressed="false">Covers</button>
+    <button id="theme" title="Toggle dark mode" aria-label="Toggle dark mode">🌗</button>
   </div>
   <p class="meta" id="meta">Loading…</p>
 </header>
@@ -285,7 +291,11 @@
   document.querySelectorAll("button[data-layout]").forEach((b) => {
     b.addEventListener("click", () => {
       layout = b.dataset.layout;
-      document.querySelectorAll("button[data-layout]").forEach((x) => x.classList.toggle("active", x === b));
+      document.querySelectorAll("button[data-layout]").forEach((x) => {
+        x.classList.toggle("active", x === b);
+        // N12: keep the pressed state truthful for assistive tech.
+        x.setAttribute("aria-pressed", x === b ? "true" : "false");
+      });
       render();
     });
   });

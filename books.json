@@ -1,7 +1,79 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1788511827172,
+  "exportedAt": 1791119358855,
   "books": [
+    {
+      "title": "Dhammapad",
+      "titleTransliteration": "धम्मपद",
+      "author": "Buddha | Translation: Rahul Sankrityayan",
+      "isbn": "9789371184465",
+      "publisher": "infinite words",
+      "genre": "philosophy",
+      "language": "Hindi",
+      "coverUrl": "covers/afbe821f340c8645.jpg",
+      "ageGroup": "advanced",
+      "availability": "available"
+    },
+    {
+      "title": "Rag Darbari",
+      "author": "Shrilal Shukla",
+      "isbn": "9788126713967",
+      "publisher": "Rajkamal Prakashan",
+      "publishedYear": 2008,
+      "genre": "Fiction",
+      "language": "Hindi",
+      "coverUrl": "covers/b947f1520cf52142.jpg",
+      "ageGroup": "above-15",
+      "availability": "out"
+    },
+    {
+      "title": "The Greatest works of Jules Verne",
+      "author": "Jules Verne",
+      "isbn": "9789354406713",
+      "publisher": "Finger Print",
+      "genre": "Science fiction",
+      "language": "English",
+      "coverUrl": "covers/f2d10b4878405443.jpg",
+      "ageGroup": "above-10",
+      "availability": "available"
+    },
+    {
+      "title": "आज भी खरे है तालाब",
+      "titleTransliteration": "Āja bhī khare haiṃ tālāba",
+      "author": "Anupama Miśra",
+      "isbn": "9788188457700",
+      "publishedYear": 2010,
+      "genre": "Ponds",
+      "language": "Hindi",
+      "coverUrl": "covers/be3ae64b742f1083.jpg",
+      "ageGroup": "above-15",
+      "availability": "available"
+    },
+    {
+      "title": "भारत में असोक राज",
+      "titleTransliteration": "Bharat mein Asok Raj",
+      "author": "Rajendra Prasad Singh",
+      "isbn": "9789366032139",
+      "publisher": "Samyak Prakashan",
+      "publishedYear": 2010,
+      "genre": "History",
+      "language": "Hindi",
+      "coverUrl": "covers/debcd65ab798ea9d.jpg",
+      "ageGroup": "above-15",
+      "availability": "available"
+    },
+    {
+      "title": "खोए हुए बुद्ध की खोज",
+      "titleTransliteration": "Khoe hue Buddha kī khoja",
+      "author": "Rājendra Prasad Singh",
+      "isbn": "9789387809192",
+      "publishedYear": 2020,
+      "genre": "Buddhist architecture",
+      "language": "Hindi",
+      "coverUrl": "covers/0a1d609a6826f2b3.jpg",
+      "ageGroup": "above-15",
+      "availability": "available"
+    },
     {
       "title": "Physics: Principles with Applications, Global Edition",
       "author": "Douglas Giancoli",
@@ -10,7 +82,8 @@
       "publishedYear": 2015,
       "genre": "Physics, Textbooks",
       "coverUrl": "covers/fdda94151b80d500.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "Sense And Solidarity - Jholawala Economics for Everyone",
@@ -20,7 +93,8 @@
       "publishedYear": 2017,
       "language": "English",
       "coverUrl": "covers/d4d3938b656c4bad.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "Nationalism",
@@ -30,7 +104,8 @@
       "publishedYear": 2017,
       "language": "English",
       "coverUrl": "covers/17dc7bd75abf7474.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "The jail notebook and other writings",
@@ -41,7 +116,8 @@
       "genre": "Archives, Politics and government, Sources",
       "language": "English",
       "coverUrl": "covers/1f4acb103b3a6407.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "An Autobiography",
@@ -51,7 +127,8 @@
       "genre": "Autobiography",
       "language": "English",
       "coverUrl": "covers/e753ef18d1c23aab.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "सीपियां",
@@ -61,7 +138,8 @@
       "genre": "Kabir",
       "language": "Hindi",
       "coverUrl": "covers/9bf9a32055b465cc.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "Complete Novels of Sherlock Holmes: Deluxe Hardbound Edition",
@@ -72,7 +150,8 @@
       "genre": "Stories",
       "language": "English",
       "coverUrl": "covers/42acaeeac5932a75.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "We, the women of India",
@@ -81,7 +160,8 @@
       "publisher": "Hachette",
       "language": "English",
       "coverUrl": "covers/b86cbff2ab67297b.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "Asoka : The Buddhist emperor of India",
@@ -89,7 +169,8 @@
       "isbn": "9789387022263",
       "language": "English",
       "coverUrl": "covers/606cbad4bcf80c22.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "What mad pursuit: a personal view of scientific discovery",
@@ -100,7 +181,8 @@
       "genre": "Biography, Biologists, England",
       "language": "English",
       "coverUrl": "covers/0dfc80cb3d4a754c.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "Republic of Caste",
@@ -111,7 +193,8 @@
       "genre": "Dalits, Caste, Caste-based discrimination",
       "language": "English",
       "coverUrl": "covers/947cda9b3d4a9649.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "The Caste Consensus",
@@ -121,7 +204,8 @@
       "genre": "Social",
       "language": "English",
       "coverUrl": "covers/21e8b46bfa6f19ff.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "Great disciples of the Buddha: their lives, their works, their legacy",
@@ -131,7 +215,8 @@
       "publishedYear": 2003,
       "genre": "Biography, Disciples, RELIGION / Eastern",
       "coverUrl": "covers/80f00c125e0fe1ed.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "Buddha",
@@ -142,7 +227,8 @@
       "genre": "Buddha",
       "language": "English",
       "coverUrl": "covers/997dc0d76241f206.jpg",
-      "ageGroup": "above-10"
+      "ageGroup": "above-10",
+      "availability": "available"
     },
     {
       "title": "Know your Sport",
@@ -151,7 +237,8 @@
       "genre": "Sports",
       "language": "English",
       "coverUrl": "covers/6f9d93e444b9d61c.jpg",
-      "ageGroup": "above-6"
+      "ageGroup": "above-6",
+      "availability": "available"
     },
     {
       "title": "100 Indian Trees",
@@ -160,7 +247,8 @@
       "genre": "Plants",
       "language": "English",
       "coverUrl": "covers/f3dedb03bb9afb5c.jpg",
-      "ageGroup": "above-6"
+      "ageGroup": "above-6",
+      "availability": "available"
     },
     {
       "title": "Indira Gandhi",
@@ -170,7 +258,8 @@
       "genre": "Personalities",
       "language": "English",
       "coverUrl": "covers/19af185565777211.jpg",
-      "ageGroup": "above-10"
+      "ageGroup": "above-10",
+      "availability": "available"
     },
     {
       "title": "Mohandas K Gandhi",
@@ -180,7 +269,8 @@
       "genre": "Personalities",
       "language": "English",
       "coverUrl": "covers/6b4f67dca1686edb.jpg",
-      "ageGroup": "above-10"
+      "ageGroup": "above-10",
+      "availability": "available"
     },
     {
       "title": "100 Indian Garden Flowers",
@@ -189,7 +279,8 @@
       "genre": "Plants",
       "language": "English",
       "coverUrl": "covers/704f128563c7be06.jpg",
-      "ageGroup": "above-6"
+      "ageGroup": "above-6",
+      "availability": "available"
     },
     {
       "title": "100 Indian Birds",
@@ -198,7 +289,8 @@
       "genre": "Birds",
       "language": "English",
       "coverUrl": "covers/0b5a0ba9f89d6265.jpg",
-      "ageGroup": "above-6"
+      "ageGroup": "above-6",
+      "availability": "available"
     },
     {
       "title": "100 Indian Animals",
@@ -207,7 +299,8 @@
       "genre": "General, Animals",
       "language": "English",
       "coverUrl": "covers/a6405c1337e84a3d.jpg",
-      "ageGroup": "above-6"
+      "ageGroup": "above-6",
+      "availability": "available"
     },
     {
       "title": "APJ Abdul Kalam",
@@ -217,7 +310,8 @@
       "genre": "Personalities",
       "language": "English",
       "coverUrl": "covers/38cc9d463b0fb313.jpg",
-      "ageGroup": "above-10"
+      "ageGroup": "above-10",
+      "availability": "available"
     },
     {
       "title": "Bhimrao Ambedkar",
@@ -227,7 +321,8 @@
       "genre": "Personalities",
       "language": "English",
       "coverUrl": "covers/1de925e6f6f65f56.jpg",
-      "ageGroup": "above-10"
+      "ageGroup": "above-10",
+      "availability": "available"
     },
     {
       "title": "Fractured Communities: Adivasi Histories and the Politics of Power",
@@ -238,7 +333,8 @@
       "genre": "History, Society",
       "language": "English",
       "coverUrl": "covers/dec5d3a6fff05913.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "Legend of King Asoka",
@@ -248,7 +344,8 @@
       "publishedYear": 2002,
       "genre": "Asoka, king of magadha, active 259 b.c., Legends, Criticism, interpretation",
       "coverUrl": "covers/66ce4700c6b8a308.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "Long Walk to Freedom",
@@ -258,7 +355,8 @@
       "publishedYear": 2008,
       "genre": "Biography, Politics and government, Presidents",
       "coverUrl": "covers/6f597a61138850bd.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "Unstoppable Us (Volume 2)",
@@ -268,7 +366,8 @@
       "genre": "History, Anthropology",
       "language": "English",
       "coverUrl": "covers/faebf82497218f60.jpg",
-      "ageGroup": "above-10"
+      "ageGroup": "above-10",
+      "availability": "available"
     },
     {
       "title": "जहां जहां चरन परे गौतम के",
@@ -279,7 +378,8 @@
       "genre": "Buddhism",
       "language": "Hindi",
       "coverUrl": "covers/ca822d4fe360b863.jpg",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Satya ke prayog",
@@ -290,7 +390,8 @@
       "genre": "Autobiography",
       "language": "Hindi",
       "coverUrl": "covers/979c66a76a3db1c1.jpg",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "नास्तिक की प्रार्थना",
@@ -300,7 +401,8 @@
       "genre": "Poetry",
       "language": "Hindi",
       "coverUrl": "covers/0cd596d1d17a663a.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "Sapiens (Hindi)",
@@ -309,7 +411,8 @@
       "genre": "History, Anthropology",
       "language": "Hindi",
       "coverUrl": "covers/5220b468c6322de9.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "हज़ार दास्तान-ए-इश्क़",
@@ -320,7 +423,8 @@
       "genre": "Poetry",
       "language": "Urdu",
       "coverUrl": "covers/d53f7384b39a95de.jpg",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Unstoppable Us (Volume 3)",
@@ -330,7 +434,8 @@
       "genre": "History, Anthropology",
       "language": "English",
       "coverUrl": "covers/422a0abf8ab8ad06.jpg",
-      "ageGroup": "above-10"
+      "ageGroup": "above-10",
+      "availability": "available"
     },
     {
       "title": "Diwan-e-Ghalib",
@@ -340,7 +445,8 @@
       "publisher": "Rajkamal",
       "language": "Urdu",
       "coverUrl": "covers/12a77c0e70e04c77.jpg",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "The Upanishads Vol 1",
@@ -350,7 +456,8 @@
       "genre": "Sanskrit Literature",
       "language": "English",
       "coverUrl": "covers/1124fde6dfe38c53.jpg",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "The  Principia",
@@ -360,7 +467,8 @@
       "publishedYear": 1995,
       "genre": "Mechanics, Dynamics of a particle, Gravitation",
       "coverUrl": "covers/01a32a0484728fe3.jpg",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Elements of Computing Systems, Second Edition: Building a Modern Computer from First Principles",
@@ -370,7 +478,8 @@
       "publishedYear": 2021,
       "genre": "Engineering",
       "coverUrl": "covers/82541154a0e3c048.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "Curfewed Night",
@@ -380,7 +489,8 @@
       "publishedYear": 2008,
       "genre": "Journalists, Autonomy and independence movements, Ethnic relations",
       "coverUrl": "covers/7a56f7f65a50400b.jpg",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Mathematics for the nonmathematician",
@@ -390,7 +500,8 @@
       "publishedYear": 1985,
       "genre": "Mathematics",
       "coverUrl": "covers/68c4a33201256bd3.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "Buddha's brain: the practical neuroscience of happiness, love, and wisdom",
@@ -401,7 +512,8 @@
       "genre": "Wisdom, Love, Neuropsychology",
       "language": "English",
       "coverUrl": "covers/76d2b255af36c290.jpg",
-      "ageGroup": "above-15"
+      "ageGroup": "above-15",
+      "availability": "available"
     },
     {
       "title": "A children's history of India",
@@ -411,7 +523,8 @@
       "publishedYear": 2015,
       "genre": "Juvenile literature, History",
       "coverUrl": "covers/fd69c661f720d092.jpg",
-      "ageGroup": "above-10"
+      "ageGroup": "above-10",
+      "availability": "available"
     },
     {
       "title": "Alberuni's India",
@@ -420,7 +533,8 @@
       "publisher": "Rupa & Co.",
       "publishedYear": 2002,
       "genre": "India, history",
-      "coverUrl": "covers/ae23c761ef246d36.jpg"
+      "coverUrl": "covers/ae23c761ef246d36.jpg",
+      "availability": "available"
     },
     {
       "title": "अपनी - अपनी बीमारी",
@@ -431,7 +545,9 @@
       "publishedYear": 2013,
       "genre": "Stories ( Satire)",
       "language": "Hindi",
-      "ageGroup": "advanced"
+      "coverUrl": "covers/1b3d4008f53bb99e.jpg",
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "शीशों का मसीहा",
@@ -442,7 +558,8 @@
       "publishedYear": 2025,
       "genre": "poetry",
       "language": "Hindi",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "भगत सिंह की जेल डायरी",
@@ -452,7 +569,8 @@
       "publisher": "Rupa Publications India private limited",
       "publishedYear": 2024,
       "language": "Hindi",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Lapoojhanna । लपूझन्ना",
@@ -461,7 +579,8 @@
       "publisher": "HIND YUGM",
       "genre": "Stories",
       "language": "Hindi",
-      "ageGroup": "above-6"
+      "ageGroup": "above-6",
+      "availability": "available"
     },
     {
       "title": "उर्दू शब्दों का गुलदस्ता",
@@ -471,7 +590,8 @@
       "publisher": "Rekhta Publications",
       "publishedYear": 2024,
       "genre": "Urdu Shayari",
-      "language": "Hindi"
+      "language": "Hindi",
+      "availability": "available"
     },
     {
       "title": "भारत: गांधी के बाद",
@@ -482,8 +602,9 @@
       "publishedYear": 2012,
       "genre": "History, Indian History",
       "language": "Hindi",
-      "coverUrl": "https://covers.openlibrary.org/b/id/10287430-M.jpg",
-      "ageGroup": "advanced"
+      "coverUrl": "covers/db5d9e94e3c7c7b9.jpg",
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "पापा जब बच्चे थे",
@@ -492,7 +613,8 @@
       "publisher": "People's publishing house",
       "genre": "Kids",
       "language": "Hindi",
-      "ageGroup": "above-6"
+      "ageGroup": "above-6",
+      "availability": "available"
     },
     {
       "title": "Fraternity: constitutional norm and human need",
@@ -501,7 +623,8 @@
       "publisher": "speaking Tiger",
       "genre": "Indian constitution",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "We, the People, and Our Constitution",
@@ -510,7 +633,8 @@
       "publisher": "Speaking Tiger",
       "genre": "Indian constitution",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Liberty: The Indian Story",
@@ -519,7 +643,8 @@
       "publisher": "Speaking Tiger",
       "genre": "Indian constitution",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Why We Die: The New Science of Ageing and the Quest for Immortality",
@@ -529,7 +654,8 @@
       "publishedYear": 2024,
       "genre": "Public health",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Nexus",
@@ -539,7 +665,8 @@
       "publishedYear": 2024,
       "genre": "Information network, History",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Aryans, Jews, Brahmins: Theorizing authority through myths of identity",
@@ -548,7 +675,8 @@
       "publisher": "Navyana",
       "genre": "History",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "What the Buddha taught.",
@@ -557,7 +685,8 @@
       "publisher": "Oneworld Publications",
       "publishedYear": 1974,
       "genre": "Buddhism",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "तरकश",
@@ -567,7 +696,8 @@
       "publisher": "राजकमल",
       "genre": "शायरी",
       "language": "Urdu",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "उर्दू शायरी का शब्द संसार",
@@ -577,7 +707,8 @@
       "publisher": "Rekhta Publications",
       "genre": "Urdu Learning",
       "language": "Urdu",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "रेख्ता उर्दू लर्निंग गाइड",
@@ -587,7 +718,9 @@
       "publisher": "Rekhta Publications",
       "genre": "Urdu Learning",
       "language": "Urdu",
-      "ageGroup": "advanced"
+      "coverUrl": "covers/ea41ef4556aee817.jpg",
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "उर्दू शब्दों का गुलदस्ता",
@@ -597,7 +730,9 @@
       "publisher": "Rekhta Publications",
       "genre": "Urdu",
       "language": "Urdu",
-      "ageGroup": "advanced"
+      "coverUrl": "covers/376e4d960d19cd2d.jpg",
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "हर मौके के लिए एक शेर",
@@ -607,7 +742,9 @@
       "publisher": "Rekhta Books",
       "genre": "shayari",
       "language": "Urdu",
-      "ageGroup": "advanced"
+      "coverUrl": "covers/7b69819d9308feb5.jpg",
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Kabir ke dohe",
@@ -615,7 +752,8 @@
       "isbn": "9789370891319",
       "publisher": "Finger Print",
       "language": "Hindi",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Code",
@@ -625,7 +763,8 @@
       "publishedYear": 2000,
       "genre": "Computer programming, Coding theory, Datenverarbeitung",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "The Ruling Caste: Imperial Lives in the Victorian Raj",
@@ -636,7 +775,8 @@
       "genre": "British, india, India, history, british occupation, 1765-1947, India, politics and government, 1765-1947",
       "language": "English",
       "coverUrl": "covers/8e80f6689ba0f4f2.jpg",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Computer Science Distilled: Learn the Art of Solving Computational Problems",
@@ -646,8 +786,9 @@
       "publishedYear": 2017,
       "genre": "Computer science, Computer algorithms, Programming languages (electronic computers)",
       "language": "English",
-      "coverUrl": "https://covers.openlibrary.org/b/id/10194609-M.jpg",
-      "ageGroup": "advanced"
+      "coverUrl": "covers/44a788d069b4d351.jpg",
+      "ageGroup": "advanced",
+      "availability": "available"
     },
     {
       "title": "Computer Science Unleashed: Harness the Power of Computational Systems",
@@ -657,7 +798,8 @@
       "publishedYear": 2021,
       "genre": "Computers, Internet",
       "language": "English",
-      "ageGroup": "advanced"
+      "ageGroup": "advanced",
+      "availability": "available"
     }
   ]
 }
