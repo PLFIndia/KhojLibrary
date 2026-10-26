@@ -2,7 +2,8 @@
   "schemaVersion": 1,
   "posters": [
     {
-      "imageRef": "posters/0ecbf577-309a-42b8-84c7-31bebe038b33.jpg"
+      "imageRef": "posters/0ecbf577-309a-42b8-84c7-31bebe038b33.jpg",
+      "description": "Teacher appears when student is ready"
     }
   ]
 }
