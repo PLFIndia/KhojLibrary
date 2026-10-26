@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1793017350274,
+  "exportedAt": 1793017876666,
   "books": [
     {
       "title": "Dust on the throne",
@@ -892,6 +892,16 @@
       "genre": "Computers, Internet",
       "language": "English",
       "ageGroup": "advanced"
+    }
+  ],
+  "periodicals": [
+    {
+      "periodicalUid": "38226295-bc94-4791-a9ea-1e13ee81ace4",
+      "title": "साइकिल",
+      "publisher": "एकलव्य प्रकाशन",
+      "language": "Hindi",
+      "frequency": "quarterly",
+      "ageGroup": "above-3"
     }
   ]
 }
