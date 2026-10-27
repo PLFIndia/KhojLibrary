@@ -1,7 +1,19 @@
 {
   "schemaVersion": 1,
-  "exportedAt": 1793020642218,
+  "exportedAt": 1793105832267,
   "books": [
+    {
+      "title": "Calculus: Early transcendentals",
+      "kind": "book",
+      "author": "James Stewart, Daniel K Clegg, Saleem Watson",
+      "isbn": "9789353509064",
+      "publisher": "Cengage",
+      "publishedYear": 2020,
+      "genre": "Mathematics",
+      "language": "English",
+      "coverUrl": "covers/511f839ab2720649.jpg",
+      "ageGroup": "above-15"
+    },
     {
       "title": "Dust on the throne",
       "kind": "book",
